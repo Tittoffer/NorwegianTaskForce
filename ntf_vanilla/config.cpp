@@ -23,7 +23,6 @@ class CfgPatches {
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {
-			
 			"A3_Weapons_F",
 			"A3_Characters_F",
 			"A3_Supplies_F_Exp_Ammoboxes",
@@ -35,10 +34,8 @@ class CfgPatches {
 			"A3_Soft_F_Gamma_Truck_02",
 			"A3_Armor_F_EPB_APC_Tracked_03",
 			"I_APC_tracked_03_cannon_F"
-			
-			};
+		};
 		units[] = {
-			
 			"ntf_cv90_wdl_vik",
 			"ntf_cv90_des_vik",
 			"ntf_cv90_wdl_vet",
@@ -55,8 +52,7 @@ class CfgPatches {
 			"ntf_flag_ntf_gray",
 			"ntf_ammobox_heavy_wood",
 			"ntf_ammobox_light_wood"
-			
-			};
+		};
 	};
 };
 
@@ -64,15 +60,13 @@ class CfgPatches {
 //========================================================================== FactionClass =================================================================================
 //===========================================================================================================================================================
 
- class cfgFactionClasses
- {
-    class NTF
-    {
+ class cfgFactionClasses {
+    class NTF {
         displayName = "Norwegian Task Force";
         author = "NTF_Saetre";
-        icon = "\ntf_vanilla\data\ntf_insignia.paa"; 
+        icon = "\ntf_vanilla\data\ntf_insignia.paa";
         priority = 1;
-        side = 1; 
+        side = 1;
     };
 };
 
@@ -81,8 +75,7 @@ class CfgPatches {
 //========================================================================== Ammo =================================================================================
 //===========================================================================================================================================================
 
-class CfgAmmo
-{
+class CfgAmmo {
 	class B_30mm_MP_Tracer_Yellow;
 	class NTF_30mm_MP_Tracer_Yellow : B_30mm_MP_Tracer_Yellow {
 	indirectHit = 8;
@@ -90,19 +83,16 @@ class CfgAmmo
 	};
 };
 
-class CfgMagazines
-{
+class CfgMagazines {
 	class 140Rnd_30mm_MP_shells_Tracer_Yellow;
-	class NTF_80Rnd_30mm_MP_shells_Tracer_Yellow : 140Rnd_30mm_MP_shells_Tracer_Yellow
-	{
+	class NTF_80Rnd_30mm_MP_shells_Tracer_Yellow : 140Rnd_30mm_MP_shells_Tracer_Yellow {
 		ammo="NTF_30mm_MP_Tracer_Yellow";
 		count=80;
 	};
-	
+
 	class 60Rnd_30mm_APFSDS_shells_Tracer_Yellow;
-	class NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow : 60Rnd_30mm_APFSDS_shells_Tracer_Yellow
-	{
-		count = 80; 
+	class NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow : 60Rnd_30mm_APFSDS_shells_Tracer_Yellow {
+		count = 80;
 	};
 };
 
@@ -114,14 +104,12 @@ class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 
-class cfgWeapons
-{
-	
+class cfgWeapons {
+
 //========================================================================== Beret =================================================================================
-	
+
 	class H_Beret_Colonel;
-	class ntf_ber_std_grn : H_Beret_Colonel
-    {
+	class ntf_ber_std_grn : H_Beret_Colonel {
 		author = "Christiansen";
 		scope = 2;
 		scopeArsenal = 2;
@@ -132,8 +120,7 @@ class cfgWeapons
 		hiddenSelectionsMaterials[] = {"\ntf_vanilla\data\ntf_ber_nohq.paa"};
     };
 
-	class ntf_ber_int_blk : H_Beret_Colonel
-    {
+	class ntf_ber_int_blk : H_Beret_Colonel {
 		author = "Christiansen";
 		scope = 2;
 		scopeArsenal = 2;
@@ -144,8 +131,7 @@ class cfgWeapons
 		hiddenSelectionsMaterials[] = {"\ntf_vanilla\data\ntf_ber_nohq.paa"};
     };
 
-	class ntf_ber_spes_red : H_Beret_Colonel
-    {
+	class ntf_ber_spes_red : H_Beret_Colonel {
 		author = "Christiansen";
 		scope = 2;
 		scopeArsenal = 2;
@@ -156,8 +142,7 @@ class cfgWeapons
 		hiddenSelectionsMaterials[] = {"\ntf_vanilla\data\ntf_ber_nohq.paa"};
     };
 
-	class ntf_ber_cav_blk : H_Beret_Colonel
-    {
+	class ntf_ber_cav_blk : H_Beret_Colonel {
 		author = "Christiansen";
 		scope = 2;
 		scopeArsenal = 2;
@@ -168,8 +153,7 @@ class cfgWeapons
 		hiddenSelectionsMaterials[] = {"\ntf_vanilla\data\ntf_ber_nohq.paa"};
     };
 
-	class ntf_ber_ing_blue : H_Beret_Colonel
-    {
+	class ntf_ber_ing_blue : H_Beret_Colonel {
 		author = "Christiansen";
 		scope = 2;
 		scopeArsenal = 2;
@@ -180,8 +164,7 @@ class cfgWeapons
 		hiddenSelectionsMaterials[] = {"\ntf_vanilla\data\ntf_ber_nohq.paa"};
     };
 
-	class ntf_ber_san_grn : H_Beret_Colonel
-	{	
+	class ntf_ber_san_grn : H_Beret_Colonel {
 	    author = "Christiansen";
 	    scope = 2;
 		scopeArsenal = 2;
@@ -191,14 +174,13 @@ class cfgWeapons
 	    hiddenSelectionsTextures[] = {"\ntf_vanilla\data\ntf_ber_san_grn.paa"};
 		hiddenSelectionsMaterials[] = {"\ntf_vanilla\data\ntf_ber_nohq.paa"};
     };
-	
+
 //========================================================================== Uniform (cfgweapons) ============================================================================
-	
+
 	class UniformItem;
-	
+
 	class U_C_Scientist;
-	class ntf_uni_crew_wdl : U_C_Scientist
-	{
+	class ntf_uni_crew_wdl : U_C_Scientist {
 		scope = 2;
 		scopeArsenal = 2;
 		author = "Christiansen";
@@ -216,8 +198,7 @@ class cfgWeapons
 		};
 	};
 
-	class ntf_uni_crew_tan : U_C_Scientist
-	{
+	class ntf_uni_crew_tan : U_C_Scientist {
 		scope = 2;
 		scopeArsenal = 2;
 		author = "Christiansen";
@@ -235,8 +216,7 @@ class cfgWeapons
 		};
 	};
 
-	class ntf_uni_heli : U_C_Scientist
-	{
+	class ntf_uni_heli : U_C_Scientist {
 		scope = 2;
 		scopeArsenal = 2;
 		author = "Christiansen";
@@ -255,8 +235,7 @@ class cfgWeapons
 	};
 
 	class U_I_pilotCoveralls ;
-	class ntf_uni_pilot : U_I_pilotCoveralls
-	{
+	class ntf_uni_pilot : U_I_pilotCoveralls {
 		scope = 2;
 		scopeArsenal = 2;
 		author = "Christiansen";
@@ -276,10 +255,9 @@ class cfgWeapons
 //================================================================================================================================================================================
 //========================================================================== CFGVEHICLES ======================================================================================================
 //================================================================================================================================================================================
-class CfgVehicles
-{
+class CfgVehicles {
 //========================================================================== Uniform (cfgVehicles) ======================================================================
-	
+
 	class C_scientist_F;
 	class ntf_uni_crew_wdl : C_scientist_F {
         scope = 1;
@@ -320,12 +298,11 @@ class CfgVehicles
 		hiddenSelections[] = {"Camo", "Insignia"};
 		ACE_GForceCoef = 0.25;
 	};
-	
-//============================================================== Kitbag =============================================================================================
+
+//============================================================== Stridssekk =============================================================================================
 
 	class B_Kitbag_rgr;
-	class ntf_pack_stridssekk_san_wdl: B_Kitbag_rgr
-    {
+	class ntf_pack_stridssekk_san_wdl: B_Kitbag_rgr {
         author = "Christiansen";
         scope = 2;
 		scopeArsenal = 2;
@@ -334,8 +311,7 @@ class CfgVehicles
         hiddenSelectionsTextures[]={"\ntf_vanilla\data\ntf_stridssekk_wdl_san.paa"};
     };
 
-    class ntf_pack_stridssekk_wdl: B_Kitbag_rgr
-    {
+    class ntf_pack_stridssekk_wdl: B_Kitbag_rgr {
         author = "Christiansen";
         scope = 2;
 		scopeArsenal = 2;
@@ -345,8 +321,7 @@ class CfgVehicles
     };
 
 	class B_Kitbag_cbr;
-	class ntf_pack_stridssekk_san_des: B_Kitbag_cbr
-    {
+	class ntf_pack_stridssekk_san_des: B_Kitbag_cbr {
         author = "Christiansen";
         scope = 2;
 		scopeArsenal = 2;
@@ -355,8 +330,7 @@ class CfgVehicles
         hiddenSelectionsTextures[]={"\ntf_vanilla\data\ntf_stridssekk_des_san.paa"};
     };
 
-    class ntf_pack_stridssekk_des: B_Kitbag_cbr
-    {
+    class ntf_pack_stridssekk_des: B_Kitbag_cbr {
         author = "Christiansen";
         scope = 2;
 		scopeArsenal = 2;
@@ -368,8 +342,7 @@ class CfgVehicles
 //=================================================================== Patruljesekk ================================================================================================
 
 	class B_AssaultPack_rgr;
-	class ntf_pack_patsekk_wdl: B_AssaultPack_rgr
-    {
+	class ntf_pack_patsekk_wdl: B_AssaultPack_rgr {
         author = "Christiansen";
         scope = 2;
 		scopeArsenal = 2;
@@ -379,8 +352,7 @@ class CfgVehicles
 			maximumLoad = 200;
     };
 
-	class ntf_pack_patsekk_san_wdl: B_AssaultPack_rgr
-    {
+	class ntf_pack_patsekk_san_wdl: B_AssaultPack_rgr {
 		author = "Christiansen";
 		scope = 2;
 		scopeArsenal = 2;
@@ -390,8 +362,7 @@ class CfgVehicles
 			maximumLoad = 200;
     };
 
-	class ntf_pack_patsekk_wdl2: B_AssaultPack_rgr
-    {
+	class ntf_pack_patsekk_wdl2: B_AssaultPack_rgr {
         author = "Christiansen";
         scope = 2;
 		scopeArsenal = 2;
@@ -401,8 +372,7 @@ class CfgVehicles
 			maximumLoad = 200;
     };
 
-	class ntf_pack_patsekk_san_wdl2: B_AssaultPack_rgr
-    {
+	class ntf_pack_patsekk_san_wdl2: B_AssaultPack_rgr {
 		author = "Christiansen";
 		scope = 2;
 		scopeArsenal = 2;
@@ -413,8 +383,7 @@ class CfgVehicles
     };
 
 	class B_AssaultPack_cbr;
-	class ntf_pack_patsekk_des : B_AssaultPack_cbr
-	{
+	class ntf_pack_patsekk_des : B_AssaultPack_cbr {
 		author = "Christiansen";
 		scope = 2;
 		scopeArsenal = 2;
@@ -424,8 +393,7 @@ class CfgVehicles
 		maximumLoad = 200;
 	};
 
-	class ntf_pack_patsekk_san_des : B_AssaultPack_cbr
-	{
+	class ntf_pack_patsekk_san_des : B_AssaultPack_cbr {
 		author = "Christiansen";
 		scope = 2;
 		scopeArsenal = 2;
@@ -438,8 +406,7 @@ class CfgVehicles
 //==================================================================== Storsekk ===============================================================================================
 
 	class B_Carryall_cbr;
-	class ntf_pack_storsekk_des: B_Carryall_cbr
-    {
+	class ntf_pack_storsekk_des: B_Carryall_cbr {
         author = "Henriksen";
         scope = 2;
 		scopeArsenal = 2;
@@ -450,8 +417,7 @@ class CfgVehicles
 		maximumLoad = 400;
     };
 
-	class ntf_pack_storsekk_san_des: B_Carryall_cbr
-    {
+	class ntf_pack_storsekk_san_des: B_Carryall_cbr {
         author = "Henriksen";
         scope = 2;
 		scopeArsenal = 2;
@@ -461,9 +427,8 @@ class CfgVehicles
         hiddenSelectionsTextures[]={"\ntf_vanilla\data\ntf_storsekk_des_san.paa"};
 		maximumLoad = 400;
     };
-	
-	class ntf_pack_storsekk_wdl: B_Carryall_cbr
-    {
+
+	class ntf_pack_storsekk_wdl: B_Carryall_cbr {
         author = "Henriksen";
         scope = 2;
 		scopeArsenal = 2;
@@ -474,8 +439,7 @@ class CfgVehicles
 		maximumLoad = 400;
     };
 
-	class ntf_pack_storsekk_san_wdl: B_Carryall_cbr
-    {
+	class ntf_pack_storsekk_san_wdl: B_Carryall_cbr {
         author = "Henriksen";
         scope = 2;
 		scopeArsenal = 2;
@@ -486,361 +450,302 @@ class CfgVehicles
 		maximumLoad = 400;
     };
 
-//=============================================================== Forsyningskasse ===============================================================
+//=========================================================================== Forsyningskasse ===============================================================
 
 	class Box_Syndicate_WpsLaunch_F;
-	class ntf_ammobox_heavy_wood: Box_Syndicate_WpsLaunch_F
-	{
+	class ntf_ammobox_heavy_wood: Box_Syndicate_WpsLaunch_F {
 		displayName = "[NTF] Forsyningskasse (tung)";
 		picture="\ntf_vanilla\data\ntf_insignia.paa";
 		transportMaxWeapons = 25;
 		transportMaxMagazines = 250;
-		class TransportBackpacks
-		{
-			class _xx_ntf_pack_patsekk_des
-			{
+		class TransportBackpacks {
+			class _xx_ntf_pack_patsekk_des {
 				magazine = "ntf_pack_patsekk_des";
 				count = 1;
 			};
-			
-			class _xx_ntf_pack_patsekk_wdl
-			{
+
+			class _xx_ntf_pack_patsekk_wdl {
 				magazine = "ntf_pack_patsekk_wdl";
 				count = 1;
 			};
 		};
-		class TransportWeapons
-		{
-			
+		class TransportWeapons {
+
 		};
-		
-		class TransportMagazines
-		{
-			class _xx_rhs_mag_30Rnd_556x45_M855A1_Stanag
-			{
+
+		class TransportMagazines {
+			class _xx_rhs_mag_30Rnd_556x45_M855A1_Stanag {
 				magazine = "rhs_mag_30Rnd_556x45_M855A1_Stanag";
 				count = 50;
 			};
-			
-			class _xx_rhsusf_mag_17Rnd_9x19_FMJ
-			{
+
+			class _xx_rhsusf_mag_17Rnd_9x19_FMJ {
 				magazine = "rhsusf_mag_17Rnd_9x19_FMJ";
 				count = 8;
 			};
-			
-			class _xx_rhs_200rnd_556x45_M_SAW
-			{
+
+			class _xx_rhs_200rnd_556x45_M_SAW {
 				magazine = "rhs_200rnd_556x45_M_SAW";
 				count = 15;
 			};
-			
-			class _xx_SmokeShell
-			{
+
+			class _xx_SmokeShell {
 				magazine = "SmokeShell";
 				count = 16;
 			};
-			
-			class _xx_rhs_mag_mk84
-			{
+
+			class _xx_rhs_mag_mk84 {
 				magazine = "rhs_mag_mk84";
 				count = 16;
 			};
-			
-			class _xx_rhs_mag_m67
-			{
+
+			class _xx_rhs_mag_m67 {
 				magazine = "rhs_mag_m67";
 				count = 16;
 			};
-			
-			class _xx_rhs_mag_M441_HE
-			{
+
+			class _xx_rhs_mag_M441_HE {
 				magazine = "rhs_mag_M441_HE";
 				count = 25;
 			};
-			
-			class _xx_rhs_mag_m715_Green
-			{
+
+			class _xx_rhs_mag_m715_Green {
 				magazine = "rhs_mag_m715_Green";
 				count = 4;
 			};
-			
-			class _xx_rhs_mag_m713_Red
-			{
+
+			class _xx_rhs_mag_m713_Red {
 				magazine = "rhs_mag_m713_Red";
 				count = 4;
 			};
-			
-			class _xx_rhs_mag_m662_red
-			{
+
+			class _xx_rhs_mag_m662_red {
 				magazine = "rhs_mag_m662_red";
 				count = 4;
 			};
-			
-			class _xx_rhs_mag_maaws_HEAT
-			{
+
+			class _xx_rhs_mag_maaws_HEAT {
 				magazine = "rhs_mag_maaws_HEAT";
 				count = 6;
 			};
-			
-			class _xx_rhs_mag_maaws_HE
-			{
+
+			class _xx_rhs_mag_maaws_HE {
 				magazine = "rhs_mag_maaws_HE";
 				count = 6;
 			};
 		};
-		
-		class TransportItems
-		{
-			class _xx_Chemlight_green
-			{
+
+		class TransportItems {
+			class _xx_Chemlight_green {
 				name = "Chemlight_green";
 				count = 10;
 			};
-			
-			class _xx_B_IR_Grenade
-			{
+
+			class _xx_B_IR_Grenade {
 				name = "B_IR_Grenade";
 				count = 5;
 			};
-			
-			class _xx_ACE_EarPlugs
-			{
+
+			class _xx_ACE_EarPlugs {
 				name = "ACE_EarPlugs";
 				count = 4;
 			};
-			
-			class _xx_ACE_epinephrine
-			{
+
+			class _xx_ACE_epinephrine {
 				name = "ACE_epinephrine";
 				count = 16;
 			};
-			
-			class _xx_ACE_morphine
-			{
+
+			class _xx_ACE_morphine {
 				name = "ACE_morphine";
 				count = 16;
 			};
-			
-			class _xx_ACE_quikclot
-			{
+
+			class _xx_ACE_quikclot {
 				name = "ACE_quikclot";
 				count = 40;
 			};
-			
-			class _xx_ACE_packingBandage
-			{
+
+			class _xx_ACE_packingBandage {
 				name = "ACE_packingBandage";
 				count = 40;
 			};
-			
-			class _xx_ACE_tourniquet
-			{
+
+			class _xx_ACE_tourniquet {
 				name = "ACE_tourniquet";
 				count = 16;
 			};
 
-			class _xx_ACE_elasticBandage
-			{
+			class _xx_ACE_elasticBandage {
 				name = "ACE_elasticBandage";
 				count = 16;
 			};
-			
-			class _xx_adv_aceSplint_splint
-			{
+
+			class _xx_adv_aceSplint_splint {
 				name = "adv_aceSplint_splint";
 				count = 8;
 			};
-			
-			class _xx_ACE_plasmaIV
-			{
+
+			class _xx_ACE_plasmaIV {
 				name = "ACE_plasmaIV";
 				count = 4;
 			};
 		};
 	};
-	
+
 	class Box_Syndicate_Ammo_F;
-	class ntf_ammobox_light_wood: Box_Syndicate_Ammo_F
-	{
+	class ntf_ammobox_light_wood: Box_Syndicate_Ammo_F {
 		displayName = "[NTF] Forsyningskasse (lett)";
 		picture="\ntf_vanilla\data\ntf_insignia.paa";
 		transportMaxWeapons = 25;
 		transportMaxMagazines = 250;
-		class TransportWeapons
-		{
-			
+		class TransportWeapons {
+
 		};
-		class TransportMagazines
-		{
-			class _xx_rhs_mag_30Rnd_556x45_M855A1_Stanag
-			{
+		class TransportMagazines {
+			class _xx_rhs_mag_30Rnd_556x45_M855A1_Stanag {
 				magazine = "rhs_mag_30Rnd_556x45_M855A1_Stanag";
 				count = 40;
 			};
-			
-			class _xx_rhs_200rnd_556x45_M_SAW
-			{
+
+			class _xx_rhs_200rnd_556x45_M_SAW {
 				magazine = "rhs_200rnd_556x45_M_SAW";
 				count = 10;
 			};
-			
-			class _xx_SmokeShell
-			{
+
+			class _xx_SmokeShell {
 				magazine = "SmokeShell";
 				count = 16;
 			};
-			
-			class _xx_SmokeShellBlue
-			{
+
+			class _xx_SmokeShellBlue {
 				magazine = "SmokeShellBlue";
 				count = 4;
 			};
-			
-			class _xx_SmokeShellRed
-			{
+
+			class _xx_SmokeShellRed {
 				magazine = "SmokeShellRed";
 				count = 4;
 			};
-			
-			class _xx_rhs_mag_mk84
-			{
+
+			class _xx_rhs_mag_mk84 {
 				magazine = "rhs_mag_mk84";
 				count = 16;
 			};
-			
-			class _xx_rhs_mag_m67
-			{
+
+			class _xx_rhs_mag_m67 {
 				magazine = "rhs_mag_m67";
 				count = 16;
 			};
-			
-			class _xx_rhs_mag_M441_HE
-			{
+
+			class _xx_rhs_mag_M441_HE {
 				magazine = "rhs_mag_M441_HE";
 				count = 24;
 			};
-			
-			class _xx_rhs_mag_m715_Green
-			{
+
+			class _xx_rhs_mag_m715_Green {
 				magazine = "rhs_mag_m715_Green";
 				count = 4;
 			};
-			
-			class _xx_rhs_mag_m713_Red
-			{
+
+			class _xx_rhs_mag_m713_Red {
 				magazine = "rhs_mag_m713_Red";
 				count = 4;
 			};
-			
-			class _xx_rhs_mag_m662_red
-			{
+
+			class _xx_rhs_mag_m662_red {
 				magazine = "rhs_mag_m662_red";
 				count = 8;
 			};
 		};
-		class TransportItems
-		{
-			class _xx_ACE_epinephrine
-			{
+
+		class TransportItems {
+			class _xx_ACE_epinephrine {
 				name = "ACE_epinephrine";
 				count = 16;
 			};
-			
-			class _xx_ACE_morphine
-			{
+
+			class _xx_ACE_morphine {
 				name = "ACE_morphine";
 				count = 16;
 			};
-			
-			class _xx_ACE_quikclot
-			{
+
+			class _xx_ACE_quikclot {
 				name = "ACE_quikclot";
 				count = 40;
 			};
-			
-			class _xx_ACE_packingBandage
-			{
+
+			class _xx_ACE_packingBandage {
 				name = "ACE_packingBandage";
 				count = 40;
 			};
-			
-			class _xx_ACE_tourniquet
-			{
+
+			class _xx_ACE_tourniquet {
 				name = "ACE_tourniquet";
 				count = 16;
 			};
 
-			class _xx_ACE_elasticBandage
-			{
+			class _xx_ACE_elasticBandage {
 				name = "ACE_elasticBandage";
 				count = 16;
 			};
-			
-			class _xx_adv_aceSplint_splint
-			{
+
+			class _xx_adv_aceSplint_splint {
 				name = "adv_aceSplint_splint";
 				count = 8;
 			};
 		};
 	};
 
-//=============================================================== Flagg ===============================================================
-	
+//=============================================================================== Flagg =======================================================================================
+
 	class FlagCarrier;
 	class Flag_NATO_F;
-	class ntf_flag_nor_grn : Flag_NATO_F
-	{
+	class ntf_flag_nor_grn : Flag_NATO_F {
 		author = "Christiansen";
 		editorPreview = "-";
 		_generalMacro = "ntf_flag_nor_grn";
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Flag (Norway - Green)";
-		class EventHandlers
-		{
+		class EventHandlers {
 			init="(_this select 0) setFlagTexture '\ntf_vanilla\data\ntf_flag_nor.paa'";
 		};
 	};
-	
-	class ntf_flag_ntf_grn : Flag_NATO_F
-	{
+
+	class ntf_flag_ntf_grn : Flag_NATO_F {
 		author = "Christiansen";
 		editorPreview = "-";
 		_generalMacro = "ntf_flag_ntf_grn";
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Flag (NTF- Green)";
-		class EventHandlers
-		{
+		class EventHandlers {
 			init="(_this select 0) setFlagTexture '\ntf_vanilla\data\ntf_flag_ntf.paa'";
 		};
 	};
-	
+
 	class Flag_UK_F;
-	class ntf_flag_nor_gray : Flag_UK_F
-	{
+	class ntf_flag_nor_gray : Flag_UK_F {
 		author = "Christiansen";
 		editorPreview = "-";
 		_generalMacro = "ntf_flag_nor_gray";
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Flag (Norway - Gray)";
-		class EventHandlers
-		{
+		class EventHandlers {
 			init="(_this select 0) setFlagTexture '\ntf_vanilla\data\ntf_flag_nor.paa'";
 		};
 	};
-	
-	class ntf_flag_ntf_gray : Flag_UK_F
-	{
+
+	class ntf_flag_ntf_gray : Flag_UK_F {
 		author = "Christiansen";
 		editorPreview = "-";
 		_generalMacro = "ntf_flag_ntf_gray";
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Flag (NTF- Gray)";
-		class EventHandlers
-		{
+		class EventHandlers {
 			init="(_this select 0) setFlagTexture '\ntf_vanilla\data\ntf_flag_ntf.paa'";
 		};
 	};
@@ -848,8 +753,7 @@ class CfgVehicles
 // ================================================================================ Scania =========================================================================
 
 	class I_Truck_02_covered_F;
-	class NTF_log_trans_wdl : I_Truck_02_covered_F
-	{
+	class NTF_log_trans_wdl : I_Truck_02_covered_F {
 		scope = 2;
 		faction = "NTF";
 		side = 1;
@@ -860,8 +764,7 @@ class CfgVehicles
 		magazines[] = {};
 	};
 
-	class NTF_log_trans_des : I_Truck_02_covered_F
-	{
+	class NTF_log_trans_des : I_Truck_02_covered_F {
 		scope = 2;
 		faction = "NTF";
 		side = 1;
@@ -873,8 +776,7 @@ class CfgVehicles
 	};
 
 	class I_Truck_02_fuel_F;
-	class NTF_log_fuel_wdl : I_Truck_02_fuel_F
-	{
+	class NTF_log_fuel_wdl : I_Truck_02_fuel_F {
 		scope = 2;
 		faction = "NTF";
 		side = 1;
@@ -885,8 +787,7 @@ class CfgVehicles
 		magazines[] = {};
 	};
 
-	class NTF_log_fuel_des : I_Truck_02_fuel_F
-	{
+	class NTF_log_fuel_des : I_Truck_02_fuel_F {
 		scope = 2;
 		faction = "NTF";
 		side = 1;
@@ -898,8 +799,7 @@ class CfgVehicles
 	};
 
 	class I_Truck_02_medical_F;
-	class NTF_log_med_wdl : I_Truck_02_medical_F
-	{
+	class NTF_log_med_wdl : I_Truck_02_medical_F {
 		scope = 2;
 		faction = "NTF";
 		side = 1;
@@ -910,8 +810,7 @@ class CfgVehicles
 		magazines[] = {};
 	};
 
-	class NTF_log_med_des : I_Truck_02_medical_F
-	{
+	class NTF_log_med_des : I_Truck_02_medical_F {
 		scope = 2;
 		scopeCurator = 2;
 		faction = "NTF";
@@ -922,72 +821,65 @@ class CfgVehicles
 		weapons[] = {"TruckHorn2"};
 		magazines[] = {};
 	};
-	
-	
+
+
 //=============================================================== CV90 ===============================================================
-	
-	class I_APC_tracked_03_cannon_F; 
-	class NTF_CV90_Wdl_Vik : I_APC_tracked_03_cannon_F
-	{
+
+	class I_APC_tracked_03_cannon_F;
+	class NTF_CV90_Wdl_Vik : I_APC_tracked_03_cannon_F {
 		scope = 2;
 		scopeCurator = 2;
 		faction = "NTF";
 		side = 1;
 		author = "Christiansen";
 		displayName = "CV90 'Viking' (Skog)";
-		hiddenselectionstextures[] = 
-		{	
+		hiddenselectionstextures[] = {
 			"\ntf_vanilla\data\ntf_cv90_wdl_turret.paa",
 			"\ntf_vanilla\data\ntf_cv90_wdl_ext_vik.paa",
 			"A3\Armor_F\Data\camonet_AAF_Digi_Jungle_CO.paa",
 			"A3\armor_f\data\cage_aaf_co.paa"
 		};
-		textureList[]=
-		{
+		textureList[]= {
 			"skog",
 			1
 		};
-		
-		class TextureSources
-		{
-			class skog
-			{
+
+		class TextureSources {
+			class skog {
 				author = "Christiansen";
 				displayName = "CV90 'Viking' (Skog)";
-				textures[]=
-				{
+				textures[]= {
 					"\ntf_vanilla\data\ntf_cv90_wdl_turret.paa",
 					"\ntf_vanilla\data\ntf_cv90_wdl_ext_vik.paa",
 					"A3\Armor_F\Data\camonet_AAF_Digi_Jungle_CO.paa",
 					"A3\armor_f\data\cage_aaf_co.paa"
 				};
-				factions[]=
-				{
+				factions[]= {
 					"BLU_F"
 				};
 			};
 		};
-		
+
 		ace_cargo_space = 5;
 		ace_cargo_hasCargo = 1;
-		
-		class TransportMagazines
-		{};
-		
-		class TransportItems
-		{};
-		
-		class TransportWeapons
-		{};
-		
+
+		class TransportMagazines {
+
+		};
+
+		class TransportItems {
+
+		};
+
+		class TransportWeapons{
+
+		};
+
 		class Turrets;
-		class Turrets : Turrets
-		{
+		class Turrets : Turrets {
 			class MainTurret;
-			class MainTurret : MainTurret
-			{
-				magazines[]=
-				{
+			class MainTurret : MainTurret {
+				magazines[]= {
 				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
 				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
 				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
@@ -1005,17 +897,15 @@ class CfgVehicles
 			};
 		};
 	};
-	
-	class NTF_CV90_Des_Vik : I_APC_tracked_03_cannon_F
-	{
+
+	class NTF_CV90_Des_Vik : I_APC_tracked_03_cannon_F {
 		scope = 2;
 		scopeCurator = 2;
 		faction = "NTF";
 		side = 1;
 		author = "Christiansen";
 		displayName = "CV90 'Viking' (Sand)";
-		magazines[]=
-		{
+		magazines[]= {
 			"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
 			"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
 			"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
@@ -1030,57 +920,54 @@ class CfgVehicles
 			"200Rnd_762x51_Belt_Yellow",
 			"200Rnd_762x51_Belt_Yellow"
 		};
-		hiddenselectionstextures[] = 
-		{	
+		hiddenselectionstextures[] = {
 			"\ntf_vanilla\data\ntf_cv90_des_turret.paa",
 			"\ntf_vanilla\data\ntf_cv90_des_ext_vik.paa",
 			"A3\Armor_F\Data\camonet_AAF_Digi_Desert_CO.paa",
 			"A3\armor_f\data\cage_G1_co.paa"
 		};
-		textureList[]=
-		{
+		textureList[]= {
 			"sand",
 			1
 		};
-		class TextureSources
-		{
+		class TextureSources {
 			class sand
 			{
 				author = "Christiansen";
 				displayName = "CV90 'Viking' (Sand)";
-				textures[]=
-				{	
+				textures[]= {
 					"\ntf_vanilla\data\ntf_cv90_des_turret.paa",
 					"\ntf_vanilla\data\ntf_cv90_des_ext_vik.paa",
 					"A3\Armor_F\Data\camonet_AAF_Digi_Desert_CO.paa",
 					"A3\armor_f\data\cage_G3_co.paa"
 				};
-				factions[]=
-				{
+				factions[]= {
 					"BLU_F"
 				};
 			};
 		};
+
 		ace_cargo_space = 5;
 		ace_cargo_hasCargo = 1;
-		class TransportMagazines
-		{};
-		class TransportItems
-		{};
-		class TransportWeapons
-		{};
+		class TransportMagazines {
+
+		};
+		class TransportItems {
+
+		};
+		class TransportWeapons {
+
+		};
 	};
 
-	class NTF_CV90_Wdl_Vet : I_APC_tracked_03_cannon_F
-	{
+	class NTF_CV90_Wdl_Vet : I_APC_tracked_03_cannon_F {
 		scope = 2;
 		scopeCurator = 2;
 		faction = "NTF";
 		side = 1;
 		author = "Christiansen";
 		displayName = "CV90 'Veteran' (Skog)";
-		magazines[]=
-		{
+		magazines[]= {
 			"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
 			"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
 			"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
@@ -1095,57 +982,53 @@ class CfgVehicles
 			"200Rnd_762x51_Belt_Yellow",
 			"200Rnd_762x51_Belt_Yellow"
 		};
-		hiddenselectionstextures[] = 
-		{	
+		hiddenselectionstextures[] = {
 			"\ntf_vanilla\data\ntf_cv90_wdl_turret.paa",
 			"\ntf_vanilla\data\ntf_cv90_wdl_ext_vet.paa",
 			"A3\Armor_F\Data\camonet_AAF_Digi_Jungle_CO.paa",
 			"A3\armor_f\data\cage_aaf_co.paa"
 		};
-		textureList[]=
-		{
+		textureList[]= {
 			"skog",
 			1
 		};
-		class TextureSources
-		{
-			class skog
-			{
+		class TextureSources {
+			class skog {
 				author = "Christiansen";
 				displayName = "CV90 'Veteran' (Skog)";
-				textures[]=
-				{	
+				textures[]= {
 					"\ntf_vanilla\data\ntf_cv90_wdl_turret.paa",
 					"\ntf_vanilla\data\ntf_cv90_wdl_ext_vet.paa",
 					"A3\Armor_F\Data\camonet_AAF_Digi_Jungle_CO.paa",
 					"A3\armor_f\data\cage_aaf_co.paa"
 				};
-				factions[]=
-				{
+				factions[]= {
 					"BLU_F"
 				};
 			};
 		};
+
 		ace_cargo_space = 5;
 		ace_cargo_hasCargo = 1;
-		class TransportMagazines
-		{};
-		class TransportItems
-		{};
-		class TransportWeapons
-		{};
+		class TransportMagazines {
+
+		};
+		class TransportItems {
+
+		};
+		class TransportWeapons {
+
+		};
 	};
-	
-	class NTF_CV90_Des_Vet : I_APC_tracked_03_cannon_F
-	{
+
+	class NTF_CV90_Des_Vet : I_APC_tracked_03_cannon_F {
 		scope = 2;
 		scopeCurator = 2;
 		faction = "NTF";
 		side = 1;
 		author = "Christiansen";
 		displayName = "CV90 'Veteran' (Sand)";
-		magazines[]=
-		{
+		magazines[]= {
 			"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
 			"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
 			"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
@@ -1160,45 +1043,42 @@ class CfgVehicles
 			"200Rnd_762x51_Belt_Yellow",
 			"200Rnd_762x51_Belt_Yellow"
 		};
-		hiddenselectionstextures[] = 
-		{	
+		hiddenselectionstextures[] = {
 			"\ntf_vanilla\data\ntf_cv90_des_turret.paa",
 			"\ntf_vanilla\data\ntf_cv90_des_ext_vet.paa",
 			"A3\Armor_F\Data\camonet_AAF_Digi_Desert_CO.paa",
 			"A3\armor_f\data\cage_G1_co.paa"
 		};
-		textureList[]=
-		{
+		textureList[]= {
 			"sand",
 			1
 		};
-		class TextureSources
-		{
-			class sand
-			{
+		class TextureSources {
+			class sand {
 				author = "Christiansen";
 				displayName = "CV90 'Veteran' (Sand)";
-				textures[]=
-				{	
+				textures[]= {
 					"\ntf_vanilla\data\ntf_cv90_des_turret.paa",
 					"\ntf_vanilla\data\ntf_cv90_des_ext_vet.paa",
 					"A3\Armor_F\Data\camonet_AAF_Digi_Desert_CO.paa",
 					"A3\armor_f\data\cage_G3_co.paa"
 				};
-				factions[]=
-				{
+				factions[]= {
 					"BLU_F"
 				};
 			};
 		};
+
 		ace_cargo_space = 5;
 		ace_cargo_hasCargo = 1;
-		class TransportMagazines
-		{};
-		class TransportItems
-		{};
-		class TransportWeapons
-		{};
+		class TransportMagazines {
+
+		};
+		class TransportItems {
+
+		};
+		class TransportWeapons {
+
+		};
 	};
-	
 };

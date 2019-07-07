@@ -5,8 +5,7 @@
 
 class CfgPatches {
 
-	class ntf_insignias
-	{
+	class ntf_insignias {
 		units[]={};
 		weapons[]={};
 		requiredAddons[]={};
@@ -17,8 +16,8 @@ class CfgPatches {
 //========================================================================== Insignia =================================================================================
 //===================================================================================================================================================================
 
-class CfgUnitInsignia
-{
+class CfgUnitInsignia{
+	
 	class ntf_ins_insignia {
 		displayName = "[NTF] Norwegian Task Force"; // Name displayed in Arsenal
 		author = "Christiansen"; // Author displayed in Arsenal

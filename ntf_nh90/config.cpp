@@ -15,26 +15,23 @@ class CfgPatches {
 //========================================================================== FactionClass =================================================================================
 //===========================================================================================================================================================
 
- class cfgFactionClasses
- {
-	class NTF
-	{
+ class cfgFactionClasses {
+	 
+	class NTF {
 		displayName = "Norwegian Task Force"; //Faction name in-game
 		author = "Christiansen";
 		icon = "\ntf_nh90\data\ntf_insignia.paa"; //Path to texture
 		priority = 1; //How far down it is on the menu
 		side = 1; // 1 Blufor 2 opfor 3 independant
-  };
+	};
 };
 
 //========================================================================== VEHICLES =================================================================================
 
-class CfgVehicles
-{
+class CfgVehicles {
 
 	class NH90;
-	class ntf_nh90_gray : NH90
-	{
+	class ntf_nh90_gray : NH90 {
 		scope = 2;
 		faction = "NTF";
 		side = 1;
@@ -75,8 +72,7 @@ class CfgVehicles
 		};
 	};
 
-	class ntf_nh90_green : NH90
-	{
+	class ntf_nh90_green : NH90 {
 		scope = 2;
 		faction = "NTF";
 		side = 1;
