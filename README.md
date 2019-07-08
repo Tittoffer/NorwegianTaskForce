@@ -15,6 +15,10 @@ The addonpack has been divided up according to dependencies to other addons, RHS
 RHS will be located within ntf_rhs. The same goes for Vanilla and VSM etc. The purpose of segregating the addon pack this way is
 modularity and quick changes to our own repository. See [Classname documentation](https://drive.google.com/open?id=14DxzWqjp9WlpRB9yDjJroXFIcGJJzaiV6ghzJZemIDM) for more information.
 
+**Additions**
+
+Additions to the code, such as a new vehicle, should always be at the end of appropriate cfg*.
+
 **Naming**
 
 * ntf_*type*_*variant*_*color*_*name*
