@@ -117,7 +117,7 @@ class cfgWeapons {
 		picture="\ntf_vanilla\data\ntf_insignia.paa";
 		model = "\A3\Characters_F_EPB\BLUFOR\headgear_beret02";
 		hiddenSelectionsTextures[] = {"\ntf_vanilla\data\ntf_ber_std_grn.paa"};
-		hiddenSelectionsMaterials[] = {"\ntf_vanilla\data\ntf_ber.rvmat"};
+		hiddenSelectionsMaterials[] = {"\ntf_vanilla\data\ntf_beret.rvmat"};
     };
 
 	class ntf_ber_int_blk : H_Beret_Colonel {
@@ -128,7 +128,7 @@ class cfgWeapons {
 		picture="\ntf_vanilla\data\ntf_insignia.paa";
 		model = "\A3\Characters_F_EPB\BLUFOR\headgear_beret02";
 		hiddenSelectionsTextures[] = {"\ntf_vanilla\data\ntf_ber_int_blk.paa"};
-		hiddenSelectionsMaterials[] = {"\ntf_vanilla\data\ntf_ber.rvmat"};
+		hiddenSelectionsMaterials[] = {"\ntf_vanilla\data\ntf_beret.rvmat"};
     };
 
 	class ntf_ber_spes_red : H_Beret_Colonel {
@@ -139,7 +139,7 @@ class cfgWeapons {
 		picture="\ntf_vanilla\data\ntf_insignia.paa";
 		model = "\A3\Characters_F_EPB\BLUFOR\headgear_beret02";
 		hiddenSelectionsTextures[] = {"\ntf_vanilla\data\ntf_ber_spes_red.paa"};
-		hiddenSelectionsMaterials[] = {"\ntf_vanilla\data\ntf_ber.rvmat"};
+		hiddenSelectionsMaterials[] = {"\ntf_vanilla\data\ntf_beret.rvmat"};
     };
 
 	class ntf_ber_cav_blk : H_Beret_Colonel {
@@ -150,7 +150,7 @@ class cfgWeapons {
 		picture="\ntf_vanilla\data\ntf_insignia.paa";
 		model = "\A3\Characters_F_EPB\BLUFOR\headgear_beret02";
 		hiddenSelectionsTextures[] = {"\ntf_vanilla\data\ntf_ber_cav_blk.paa"};
-		hiddenSelectionsMaterials[] = {"\ntf_vanilla\data\ntf_ber.rvmat"};
+		hiddenSelectionsMaterials[] = {"\ntf_vanilla\data\ntf_beret.rvmat"};
     };
 
 	class ntf_ber_ing_blue : H_Beret_Colonel {
@@ -161,7 +161,7 @@ class cfgWeapons {
 		picture="\ntf_vanilla\data\ntf_insignia.paa";
 		model = "\A3\Characters_F_EPB\BLUFOR\headgear_beret02";
 		hiddenSelectionsTextures[] = {"\ntf_vanilla\data\ntf_ber_ing_blue.paa"};
-		hiddenSelectionsMaterials[] = {"\ntf_vanilla\data\ntf_ber.rvmat"};
+		hiddenSelectionsMaterials[] = {"\ntf_vanilla\data\ntf_beret.rvmat"};
     };
 
 	class ntf_ber_san_grn : H_Beret_Colonel {
@@ -172,7 +172,7 @@ class cfgWeapons {
 		picture="\ntf_vanilla\data\ntf_insignia.paa";
 	    model = "\A3\Characters_F_EPB\BLUFOR\headgear_beret02";
 	    hiddenSelectionsTextures[] = {"\ntf_vanilla\data\ntf_ber_san_grn.paa"};
-		hiddenSelectionsMaterials[] = {"\ntf_vanilla\data\ntf_ber.rvmat"};
+		hiddenSelectionsMaterials[] = {"\ntf_vanilla\data\ntf_beret.rvmat"};
     };
 
 //========================================================================== Uniform (cfgweapons) ============================================================================
