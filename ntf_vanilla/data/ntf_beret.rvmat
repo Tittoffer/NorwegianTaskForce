@@ -12,7 +12,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture = "NTF_gear\data\ntf_ber_nohq.paa";
+	texture = "NTF_vanilla\data\ntf_nohq.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
