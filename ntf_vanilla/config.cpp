@@ -20,7 +20,6 @@
 
 class CfgPatches {
 	class ntf_vanilla {
-		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {
 			"A3_Weapons_F",
@@ -52,6 +51,10 @@ class CfgPatches {
 			"ntf_flag_ntf_gray",
 			"ntf_ammobox_heavy_wood",
 			"ntf_ammobox_light_wood"
+		};
+		weapons[]={
+			"ntf_30mm_bushmastermk2",
+			"ntf_fnmag_coax"
 		};
 	};
 };
@@ -85,14 +88,21 @@ class CfgAmmo {
 
 class CfgMagazines {
 	class 140Rnd_30mm_MP_shells_Tracer_Yellow;
-	class NTF_80Rnd_30mm_MP_shells_Tracer_Yellow : 140Rnd_30mm_MP_shells_Tracer_Yellow {
+	class ntf_80Rnd_30mm_MP_shells_Tracer_Yellow : 140Rnd_30mm_MP_shells_Tracer_Yellow {
 		ammo="NTF_30mm_MP_Tracer_Yellow";
 		count=80;
 	};
 
 	class 60Rnd_30mm_APFSDS_shells_Tracer_Yellow;
-	class NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow : 60Rnd_30mm_APFSDS_shells_Tracer_Yellow {
+	class ntf_80Rnd_30mm_APFSDS_shells_Tracer_Yellow : 60Rnd_30mm_APFSDS_shells_Tracer_Yellow {
 		count = 80;
+	};
+
+	class 200Rnd_762x51_Belt;
+	class ntf_200rnd_762_fnmag_coax : 200Rnd_762x51_Belt {
+        displayName = "200rnd 762x51";
+        ammo = "B_762x51_Ball";
+        count = 200;
 	};
 };
 
@@ -250,6 +260,32 @@ class cfgWeapons {
 				mass = 1; //how much it weights
 		};
 	};
+
+//========================================================================== CV90 cannons ======================================================================
+
+	class player;
+	class MGun;
+
+	class autocannon_30mm;
+	class ntf_30mm_bushmastermk2 : autocannon_30mm {
+		class player: player {
+            reloadTime=0.5;
+        };
+        muzzles[] = {"this"};
+        displayName = "Bushmaster II";
+        magazines[] = {"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow", "NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow"};
+        magazineReloadTime = 4;
+	};
+
+	class LMG_coax;
+	class ntf_fnmag_coax : LMG_coax {
+        class manual: MGun {
+            reloadTime=0.115;
+        };
+		displayName = "FN MAG Koaksial";
+		magazines[] = {"ntf_200rnd_762_fnmag_coax"};
+		//magazineReloadTime = 8 ;
+    };
 };
 
 //================================================================================================================================================================================
@@ -824,8 +860,11 @@ class CfgVehicles {
 
 
 //=============================================================== CV90 ===============================================================
-
 	class I_APC_tracked_03_cannon_F;
+	class Turrets {
+		class MainTurret;
+	};
+
 	class NTF_CV90_Wdl_Vik : I_APC_tracked_03_cannon_F {
 		scope = 2;
 		scopeCurator = 2;
@@ -875,24 +914,23 @@ class CfgVehicles {
 
 		};
 
-		class Turrets;
 		class Turrets : Turrets {
-			class MainTurret;
 			class MainTurret : MainTurret {
+				weapons[]={"ntf_30mm_bushmastermk2","ntf_fnmag_coax"};
 				magazines[]= {
 				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
 				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
 				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
 				"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
 				"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
-				"200Rnd_762x51_Belt_Yellow",
-				"200Rnd_762x51_Belt_Yellow",
-				"200Rnd_762x51_Belt_Yellow",
-				"200Rnd_762x51_Belt_Yellow",
-				"200Rnd_762x51_Belt_Yellow",
-				"200Rnd_762x51_Belt_Yellow",
-				"200Rnd_762x51_Belt_Yellow",
-				"200Rnd_762x51_Belt_Yellow"
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax"
 				};
 			};
 		};
@@ -905,21 +943,6 @@ class CfgVehicles {
 		side = 1;
 		author = "Christiansen";
 		displayName = "CV90 'Viking' (Sand)";
-		magazines[]= {
-			"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
-			"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
-			"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
-			"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
-			"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
-			"200Rnd_762x51_Belt_Yellow",
-			"200Rnd_762x51_Belt_Yellow",
-			"200Rnd_762x51_Belt_Yellow",
-			"200Rnd_762x51_Belt_Yellow",
-			"200Rnd_762x51_Belt_Yellow",
-			"200Rnd_762x51_Belt_Yellow",
-			"200Rnd_762x51_Belt_Yellow",
-			"200Rnd_762x51_Belt_Yellow"
-		};
 		hiddenselectionstextures[] = {
 			"\ntf_vanilla\data\ntf_cv90_des_turret.paa",
 			"\ntf_vanilla\data\ntf_cv90_des_ext_vik.paa",
@@ -958,6 +981,27 @@ class CfgVehicles {
 		class TransportWeapons {
 
 		};
+
+		class Turrets : Turrets {
+			class MainTurret : MainTurret {
+				weapons[]={"ntf_30mm_bushmastermk2","ntf_fnmag_coax"};
+				magazines[]= {
+				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+				"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
+				"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax"
+				};
+			};
+		};
 	};
 
 	class NTF_CV90_Wdl_Vet : I_APC_tracked_03_cannon_F {
@@ -967,21 +1011,6 @@ class CfgVehicles {
 		side = 1;
 		author = "Christiansen";
 		displayName = "CV90 'Veteran' (Skog)";
-		magazines[]= {
-			"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
-			"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
-			"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
-			"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
-			"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
-			"200Rnd_762x51_Belt_Yellow",
-			"200Rnd_762x51_Belt_Yellow",
-			"200Rnd_762x51_Belt_Yellow",
-			"200Rnd_762x51_Belt_Yellow",
-			"200Rnd_762x51_Belt_Yellow",
-			"200Rnd_762x51_Belt_Yellow",
-			"200Rnd_762x51_Belt_Yellow",
-			"200Rnd_762x51_Belt_Yellow"
-		};
 		hiddenselectionstextures[] = {
 			"\ntf_vanilla\data\ntf_cv90_wdl_turret.paa",
 			"\ntf_vanilla\data\ntf_cv90_wdl_ext_vet.paa",
@@ -1019,6 +1048,27 @@ class CfgVehicles {
 		class TransportWeapons {
 
 		};
+
+		class Turrets : Turrets {
+			class MainTurret : MainTurret {
+				weapons[]={"ntf_30mm_bushmastermk2","ntf_fnmag_coax"};
+				magazines[]= {
+				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+				"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
+				"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax"
+				};
+			};
+		};
 	};
 
 	class NTF_CV90_Des_Vet : I_APC_tracked_03_cannon_F {
@@ -1028,21 +1078,6 @@ class CfgVehicles {
 		side = 1;
 		author = "Christiansen";
 		displayName = "CV90 'Veteran' (Sand)";
-		magazines[]= {
-			"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
-			"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
-			"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
-			"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
-			"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
-			"200Rnd_762x51_Belt_Yellow",
-			"200Rnd_762x51_Belt_Yellow",
-			"200Rnd_762x51_Belt_Yellow",
-			"200Rnd_762x51_Belt_Yellow",
-			"200Rnd_762x51_Belt_Yellow",
-			"200Rnd_762x51_Belt_Yellow",
-			"200Rnd_762x51_Belt_Yellow",
-			"200Rnd_762x51_Belt_Yellow"
-		};
 		hiddenselectionstextures[] = {
 			"\ntf_vanilla\data\ntf_cv90_des_turret.paa",
 			"\ntf_vanilla\data\ntf_cv90_des_ext_vet.paa",
@@ -1079,6 +1114,27 @@ class CfgVehicles {
 		};
 		class TransportWeapons {
 
+		};
+
+		class Turrets : Turrets {
+			class MainTurret : MainTurret {
+				weapons[]={"ntf_30mm_bushmastermk2","ntf_fnmag_coax"};
+				magazines[]= {
+				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+				"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
+				"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax",
+				"ntf_200rnd_762_fnmag_coax"
+				};
+			};
 		};
 	};
 };
