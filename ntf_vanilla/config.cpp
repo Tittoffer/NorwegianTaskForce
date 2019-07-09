@@ -860,10 +860,17 @@ class CfgVehicles {
 
 
 //=============================================================== CV90 ===============================================================
-	class I_APC_tracked_03_cannon_F;
-	class Turrets {
-		class MainTurret;
-	};
+	class Tank;
+    class Tank_F: Tank {
+        class Turrets;
+    };
+    class APC_Tracked_03_base_F: Tank_F {
+        class Turrets: Turrets {
+            class MainTurret;
+        };
+    };
+    class I_APC_tracked_03_base_F: APC_Tracked_03_base_F {};
+    class I_APC_tracked_03_cannon_F: I_APC_tracked_03_base_F {};
 
 	class NTF_CV90_Wdl_Vik : I_APC_tracked_03_cannon_F {
 		scope = 2;
@@ -918,19 +925,19 @@ class CfgVehicles {
 			class MainTurret : MainTurret {
 				weapons[]={"ntf_30mm_bushmastermk2","ntf_fnmag_coax"};
 				magazines[]= {
-				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
-				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
-				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
-				"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
-				"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax"
+					"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+					"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+					"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+					"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
+					"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax"
 				};
 			};
 		};
@@ -986,19 +993,19 @@ class CfgVehicles {
 			class MainTurret : MainTurret {
 				weapons[]={"ntf_30mm_bushmastermk2","ntf_fnmag_coax"};
 				magazines[]= {
-				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
-				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
-				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
-				"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
-				"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax"
+					"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+					"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+					"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+					"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
+					"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax"
 				};
 			};
 		};
@@ -1053,19 +1060,19 @@ class CfgVehicles {
 			class MainTurret : MainTurret {
 				weapons[]={"ntf_30mm_bushmastermk2","ntf_fnmag_coax"};
 				magazines[]= {
-				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
-				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
-				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
-				"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
-				"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax"
+					"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+					"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+					"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+					"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
+					"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax"
 				};
 			};
 		};
@@ -1120,19 +1127,19 @@ class CfgVehicles {
 			class MainTurret : MainTurret {
 				weapons[]={"ntf_30mm_bushmastermk2","ntf_fnmag_coax"};
 				magazines[]= {
-				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
-				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
-				"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
-				"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
-				"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax",
-				"ntf_200rnd_762_fnmag_coax"
+					"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+					"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+					"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+					"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
+					"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax"
 				};
 			};
 		};
