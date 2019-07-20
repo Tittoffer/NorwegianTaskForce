@@ -261,6 +261,103 @@ class cfgWeapons {
 		};
 	};
 
+	class U_B_CTRG_Soldier_F ;
+	class ntf_uni_m042_wdl : U_B_CTRG_Soldier_F {
+		scope = 2;
+		scopeArsenal = 2;
+		author = "Christiansen";
+		picture="\ntf_vanilla\data\ntf_insignia.paa";
+		displayName= "[NTF] Uniform 2 (Skog)";
+		model="\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
+
+		class ItemInfo : UniformItem {
+				uniformModel = "-";
+				uniformClass = "ntf_uni_m042_wdl"; //would be same as our made soldier class
+				containerClass = "Supply80"; //how much it can carry
+				mass = 1; //how much it weights
+		};
+	};
+
+	class ntf_uni_m042_des : U_B_CTRG_Soldier_F {
+		scope = 2;
+		scopeArsenal = 2;
+		author = "Christiansen";
+		picture="\ntf_vanilla\data\ntf_insignia.paa";
+		displayName= "[NTF] Uniform 2 (Sand)";
+		model="\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d";
+
+		class ItemInfo : UniformItem {
+				uniformModel = "-";
+				uniformClass = "ntf_uni_m042_des"; //would be same as our made soldier class
+				containerClass = "Supply80"; //how much it can carry
+				mass = 1; //how much it weights
+		};
+	};
+
+	class U_B_CTRG_Soldier_3_F ;
+	class ntf_uni_m042roll_wdl : U_B_CTRG_Soldier_3_F {
+		scope = 2;
+		scopeArsenal = 2;
+		author = "Christiansen";
+		picture="\ntf_vanilla\data\ntf_insignia.paa";
+		displayName= "[NTF] Uniform 2 Brettet (Skog)";
+		model="\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_03_F.p3d";
+
+		class ItemInfo : UniformItem {
+				uniformModel = "-";
+				uniformClass = "ntf_uni_m042roll_wdl"; //would be same as our made soldier class
+				containerClass = "Supply80"; //how much it can carry
+				mass = 1; //how much it weights
+		};
+	};
+
+	class ntf_uni_m042roll_des : U_B_CTRG_Soldier_3_F {
+		scope = 2;
+		scopeArsenal = 2;
+		author = "Christiansen";
+		picture="\ntf_vanilla\data\ntf_insignia.paa";
+		displayName= "[NTF] Uniform 2 Brettet (Sand)";
+		model="\A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_03_F.p3d";
+
+		class ItemInfo : UniformItem {
+				uniformModel = "-";
+				uniformClass = "ntf_uni_m042roll_des"; //would be same as our made soldier class
+				containerClass = "Supply80"; //how much it can carry
+				mass = 1; //how much it weights
+		};
+	};
+
+	class U_I_C_Soldier_Para_3_F ;
+	class ntf_uni_casual_wdl : U_I_C_Soldier_Para_3_F {
+		scope = 2;
+		scopeArsenal = 2;
+		author = "Christiansen";
+		displayName= "Para Military Garb Nor (Wood)";
+		model="\A3\Characters_F_Exp\Syndikat\I_C_Soldier_Para_3_F.p3d";
+
+		class ItemInfo : UniformItem {
+				uniformModel = "-";
+				uniformClass = "ntf_uni_casual_wdl"; //would be same as our made soldier class
+				containerClass = "Supply80"; //how much it can carry
+				mass = 1; //how much it weights
+		};
+	};
+
+	class ntf_uni_casual_des : U_I_C_Soldier_Para_3_F {
+		scope = 2;
+		scopeArsenal = 2;
+		author = "Christiansen";
+		displayName= "Para Military Garb Nor (Desert)";
+		model="\A3\Characters_F_Exp\Syndikat\I_C_Soldier_Para_3_F.p3d";
+
+		class ItemInfo : UniformItem {
+				uniformModel = "-";
+				uniformClass = "ntf_uni_casual_des"; //would be same as our made soldier class
+				containerClass = "Supply80"; //how much it can carry
+				mass = 1; //how much it weights
+		};
+	};
+
 //========================================================================== CV90 cannons ======================================================================
 
 	class player;
@@ -333,6 +430,57 @@ class CfgVehicles {
 		uniformClass = "ntf_uni_pilot"; //the uniform item
 		hiddenSelections[] = {"Camo", "Insignia"};
 		ACE_GForceCoef = 0.25;
+	};
+
+	class U_B_CTRG_1 ;
+	class ntf_uni_m042_wdl : U_B_CTRG_1 {
+		scope = 1;
+		displayName= "[NTF] Uniform 2 (Skog)";
+		nakedUniform = "U_BasicBody"; //class for "naked" body
+		uniformClass = "ntf_uni_m042_wdl"; //the uniform item
+		hiddenSelections[] = {"Camo", "Insignia"};
+	};
+
+	class ntf_uni_m042_des : U_B_CTRG_1 {
+		scope = 1;
+		displayName= "[NTF] Uniform 2 (Sand)";
+		nakedUniform = "U_BasicBody"; //class for "naked" body
+		uniformClass = "ntf_uni_m042_des"; //the uniform item
+		hiddenSelections[] = {"Camo", "Insignia"};
+	};
+
+	class U_B_CTRG_3 ;
+	class ntf_uni_m042roll_wdl : U_B_CTRG_3 {
+		scope = 1;
+		displayName= "[NTF] Uniform 2 Brettet (Skog)";
+		nakedUniform = "U_BasicBody"; //class for "naked" body
+		uniformClass = "ntf_uni_m042roll_wdl"; //the uniform item
+		hiddenSelections[] = {"Camo", "Insignia"};
+	};
+
+	class ntf_uni_m042roll_des : U_B_CTRG_3 {
+		scope = 1;
+		displayName= "[NTF] Uniform 2 Brettet (Sand)";
+		nakedUniform = "U_BasicBody"; //class for "naked" body
+		uniformClass = "ntf_uni_m042roll_des"; //the uniform item
+		hiddenSelections[] = {"Camo", "Insignia"};
+	};
+
+	class I_C_Soldier_Para_3_F ;
+	class ntf_uni_casual_wdl : I_C_Soldier_Para_3_F {
+		scope = 1;
+		displayName= "Para Military Garb Nor (Wood)";
+		nakedUniform = "U_BasicBody"; //class for "naked" body
+		uniformClass = "ntf_uni_casual_wdl"; //the uniform item
+		hiddenSelections[] = {"Camo", "Insignia"};
+	};
+
+	class ntf_uni_casual_des : I_C_Soldier_Para_3_F {
+		scope = 1;
+		displayName= "Para Military Garb Nor (Desert)";
+		nakedUniform = "U_BasicBody"; //class for "naked" body
+		uniformClass = "ntf_uni_casual_des"; //the uniform item
+		hiddenSelections[] = {"Camo", "Insignia"};
 	};
 
 //============================================================== Stridssekk =============================================================================================
