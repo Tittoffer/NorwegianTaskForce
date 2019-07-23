@@ -1011,6 +1011,77 @@ class CfgVehicles {
 		};
 	};
 
+	class NTF_CV90_win_Vik : I_APC_tracked_03_cannon_F {
+		scope = 2;
+		scopeCurator = 2;
+		faction = "NTF";
+		side = 1;
+		author = "Christiansen";
+		displayName = "CV90 'Viking' (Vinter)";
+		hiddenselectionstextures[] = {
+			"\ntf_vanilla\data\ntf_cv90_wdl_turret.paa",
+			"\ntf_vanilla\data\ntf_cv90_wdl_ext_vik.paa",
+			"\ntf_vanilla\data\ntf_cv90_win_net.paa",
+			"A3\armor_f\data\cage_aaf_co.paa"
+		};
+		textureList[]= {
+			"vinter",
+			1
+		};
+
+		class TextureSources {
+			class vinter {
+				author = "Christiansen";
+				displayName = "CV90 'Viking' (Vinter)";
+				textures[]= {
+					"\ntf_vanilla\data\ntf_cv90_wdl_turret.paa",
+					"\ntf_vanilla\data\ntf_cv90_wdl_ext_vik.paa",
+					"\ntf_vanilla\data\ntf_cv90_win_net.paa",
+					"A3\armor_f\data\cage_aaf_co.paa"
+				};
+				factions[]= {
+					"BLU_F"
+				};
+			};
+		};
+
+		ace_cargo_space = 5;
+		ace_cargo_hasCargo = 1;
+
+		class TransportMagazines {
+
+		};
+
+		class TransportItems {
+
+		};
+
+		class TransportWeapons{
+
+		};
+
+		class Turrets : Turrets {
+			class MainTurret : MainTurret {
+				weapons[]={"ntf_30mm_bushmastermk2","ntf_fnmag_coax"};
+				magazines[]= {
+					"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+					"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+					"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+					"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
+					"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax"
+				};
+			};
+		};
+	};
+
 	class NTF_CV90_Wdl_Vet : I_APC_tracked_03_cannon_F {
 		scope = 2;
 		scopeCurator = 2;
@@ -1104,6 +1175,73 @@ class CfgVehicles {
 					"\ntf_vanilla\data\ntf_cv90_des_ext_vet.paa",
 					"A3\Armor_F\Data\camonet_AAF_Digi_Desert_CO.paa",
 					"A3\armor_f\data\cage_G3_co.paa"
+				};
+				factions[]= {
+					"BLU_F"
+				};
+			};
+		};
+
+		ace_cargo_space = 5;
+		ace_cargo_hasCargo = 1;
+		class TransportMagazines {
+
+		};
+		class TransportItems {
+
+		};
+		class TransportWeapons {
+
+		};
+
+		class Turrets : Turrets {
+			class MainTurret : MainTurret {
+				weapons[]={"ntf_30mm_bushmastermk2","ntf_fnmag_coax"};
+				magazines[]= {
+					"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+					"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+					"NTF_80Rnd_30mm_MP_shells_Tracer_Yellow",
+					"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
+					"NTF_80Rnd_30mm_APFSDS_shells_Tracer_Yellow",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax",
+					"ntf_200rnd_762_fnmag_coax"
+				};
+			};
+		};
+	};
+
+	class NTF_CV90_win_Vet : I_APC_tracked_03_cannon_F {
+		scope = 2;
+		scopeCurator = 2;
+		faction = "NTF";
+		side = 1;
+		author = "Christiansen";
+		displayName = "CV90 'Veteran' (Vinter)";
+		hiddenselectionstextures[] = {
+			"\ntf_vanilla\data\ntf_cv90_wdl_turret.paa",
+			"\ntf_vanilla\data\ntf_cv90_wdl_ext_vet.paa",
+			"\ntf_vanilla\data\ntf_cv90_win_net.paa",
+			"A3\armor_f\data\cage_aaf_co.paa"
+		};
+		textureList[]= {
+			"vinter",
+			1
+		};
+		class TextureSources {
+			class vinter {
+				author = "Christiansen";
+				displayName = "CV90 'Veteran' (Vinter)";
+				textures[]= {
+					"\ntf_vanilla\data\ntf_cv90_wdl_turret.paa",
+					"\ntf_vanilla\data\ntf_cv90_wdl_ext_vet.paa",
+					"\ntf_vanilla\data\ntf_cv90_win_net.paa",
+					"A3\armor_f\data\cage_aaf_co.paa"
 				};
 				factions[]= {
 					"BLU_F"

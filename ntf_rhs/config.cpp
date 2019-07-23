@@ -98,10 +98,12 @@ class CfgPatches {
 //===========================================================================================================================================================
 
 class ItemCore;
-class HeadGearItem;
+
 class H_HelmetB : ItemCore {
 	class ItemInfo;
 };
+
+class HeadGearItem;
 
 class cfgWeapons {
 
@@ -163,6 +165,137 @@ class cfgWeapons {
 		author="T. Andreassen";
 		hiddenSelectionsTextures[]= {
 			"ntf_rhs\data\ntf_hlm_cato_wdl.paa"
+		};
+	};
+
+//========================================================================== Opscore =================================================================================
+
+	class rhsusf_opscore_cover;
+	class ntf_hlm_ops : rhsusf_opscore_cover {
+		author="Christiansen";
+		scope = 2;
+		scopeArsenal=2;
+		displayName = "[NTF] Opscore";
+		hiddenSelectionsTextures[] =
+		{
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_co.paa", // base of helmet
+			"", // mic
+			"", // strobe
+			"", // camera
+			"", // cover
+			"" //Peltor
+		};
+	};
+
+	class ntf_hlm_ops_pelt : rhsusf_opscore_cover {
+		author="Christiansen";
+		scope = 2;
+		scopeArsenal=2;
+		displayName = "[NTF] Opscore (Headset)";
+		hiddenSelectionsTextures[] =
+		{
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_co.paa", // base of helmet
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa", // mic
+			"", // strobe
+			"", // camera
+			"", // cover
+			""
+		};
+	};
+
+	class ntf_hlm_ops_pelt_str : rhsusf_opscore_cover {
+		author="Christiansen";
+		scope = 2;
+		scopeArsenal=2;
+		displayName = "[NTF] Opscore (Headset / Strobe)";
+		hiddenSelectionsTextures[] =
+		{
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_co.paa", // base of helmet
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa", // mic
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\nsw_co.paa", // strobe
+			"", // camera
+			"", // cover
+			"\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa"
+		};
+	};
+
+	class ntf_hlm_ops_pelt_str_cam : rhsusf_opscore_cover {
+		author="Christiansen";
+		scope = 2;
+		scopeArsenal=2;
+		displayName = "[NTF] Opscore (Headset / Strobe / Camera)";
+		hiddenSelectionsTextures[] =
+		{
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_co.paa", // base of helmet
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa", // mic
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\nsw_co.paa", // strobe
+			"\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa", // camera
+			"", // cover
+			"\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa"
+		};
+	};
+
+	class ntf_hlm_ops_win : rhsusf_opscore_cover {
+		author="Christiansen";
+		scope = 2;
+		scopeArsenal=2;
+		displayName = "[NTF] Opscore Vinter (Cover)";
+		hiddenSelectionsTextures[] =
+		{
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_co.paa", // base of helmet
+			"", // mic
+			"", // strobe
+			"", // camera
+			"ntf_rhs\data\ntf_hlm_opscore_cover_win.paa", // cover
+			""
+		};
+	};
+
+	class ntf_hlm_ops_pelt_win : rhsusf_opscore_cover {
+		author="Christiansen";
+		scope = 2;
+		scopeArsenal=2;
+		displayName = "[NTF] Opscore Vinter (Headset / Cover)";
+		hiddenSelectionsTextures[] =
+		{
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_co.paa", // base of helmet
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa", // mic
+			"", // strobe
+			"", // camera
+			"ntf_rhs\data\ntf_hlm_opscore_cover_win.paa", // cover
+			""
+		};
+	};
+
+	class ntf_hlm_ops_pelt_str_win : rhsusf_opscore_cover {
+		author="Christiansen";
+		scope = 2;
+		scopeArsenal=2;
+		displayName = "[NTF] Opscore Vinter (Headset / Strobe / Cover)";
+		hiddenSelectionsTextures[] =
+		{
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_co.paa", // base of helmet
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa", // mic
+			"ntf_rhs\data\ntf_hlm_opscore_nsw_win.paa", // strobe
+			"", // camera
+			"ntf_rhs\data\ntf_hlm_opscore_cover_win.paa", // cover
+			"\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa"
+		};
+	};
+
+	class ntf_hlm_ops_pelt_str_cam_win : rhsusf_opscore_cover {
+		author="Christiansen";
+		scope = 2;
+		scopeArsenal=2;
+		displayName = "[NTF] Opscore Vinter (Headset / Strobe / Cam / Cover)";
+		hiddenSelectionsTextures[] =
+		{
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_co.paa", // base of helmet
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa", // mic
+			"ntf_rhs\data\ntf_hlm_opscore_nsw_win.paa", // strobe
+			"\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa", // camera
+			"ntf_rhs\data\ntf_hlm_opscore_cover_win.paa", // cover
+			"\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa"
 		};
 	};
 
