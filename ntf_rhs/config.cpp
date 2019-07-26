@@ -61,7 +61,20 @@ class CfgPatches {
 			"ntf_weap_hk416_sand",
 			"ntf_weap_hk416_sand2",
 			"ntf_hlm_cato_des",
-			"ntf_hlm_cato_wdl"
+			"ntf_hlm_cato_wdl",
+			"ntf_hlm_ops",
+			"ntf_hlm_ops_pelt",
+			"ntf_hlm_ops_pelt_str",
+			"ntf_hlm_ops_pelt_str_cam",
+			"ntf_hlm_ops_win",
+			"ntf_hlm_ops_pelt_win",
+			"ntf_hlm_ops_pelt_str_win",
+			"ntf_hlm_ops_pelt_str_cam_win",
+			"ntf_hlm_ops_wdl",
+			"ntf_hlm_ops_pelt_wdl",
+			"ntf_hlm_ops_pelt_str_wdl",
+			"ntf_hlm_ops_pelt_str_cam_wdl"
+
 		};
 
 		units[] = {
@@ -207,7 +220,7 @@ class cfgWeapons {
 		author="Christiansen";
 		scope = 2;
 		scopeArsenal=2;
-		displayName = "[NTF] Opscore (Headset / Strobe)";
+		displayName = "[NTF] Opscore (Headset/Strobe)";
 		hiddenSelectionsTextures[] =
 		{
 			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_co.paa", // base of helmet
@@ -223,7 +236,7 @@ class cfgWeapons {
 		author="Christiansen";
 		scope = 2;
 		scopeArsenal=2;
-		displayName = "[NTF] Opscore (Headset / Strobe / Camera)";
+		displayName = "[NTF] Opscore (Headset/Strobe/Cam)";
 		hiddenSelectionsTextures[] =
 		{
 			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_co.paa", // base of helmet
@@ -239,7 +252,7 @@ class cfgWeapons {
 		author="Christiansen";
 		scope = 2;
 		scopeArsenal=2;
-		displayName = "[NTF] Opscore Vinter (Cover)";
+		displayName = "[NTF] Opscore VT";
 		hiddenSelectionsTextures[] =
 		{
 			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_co.paa", // base of helmet
@@ -255,7 +268,7 @@ class cfgWeapons {
 		author="Christiansen";
 		scope = 2;
 		scopeArsenal=2;
-		displayName = "[NTF] Opscore Vinter (Headset / Cover)";
+		displayName = "[NTF] Opscore VT (Headset)";
 		hiddenSelectionsTextures[] =
 		{
 			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_co.paa", // base of helmet
@@ -271,7 +284,7 @@ class cfgWeapons {
 		author="Christiansen";
 		scope = 2;
 		scopeArsenal=2;
-		displayName = "[NTF] Opscore Vinter (Headset / Strobe / Cover)";
+		displayName = "[NTF] Opscore VT (Headset/Strobe)";
 		hiddenSelectionsTextures[] =
 		{
 			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_co.paa", // base of helmet
@@ -287,7 +300,7 @@ class cfgWeapons {
 		author="Christiansen";
 		scope = 2;
 		scopeArsenal=2;
-		displayName = "[NTF] Opscore Vinter (Headset / Strobe / Cam / Cover)";
+		displayName = "[NTF] Opscore VT (Headset/Strobe/Cam)";
 		hiddenSelectionsTextures[] =
 		{
 			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_co.paa", // base of helmet
@@ -295,6 +308,70 @@ class cfgWeapons {
 			"ntf_rhs\data\ntf_hlm_opscore_nsw_win.paa", // strobe
 			"\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa", // camera
 			"ntf_rhs\data\ntf_hlm_opscore_cover_win.paa", // cover
+			"\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa"
+		};
+	};
+
+	class ntf_hlm_ops_wdl : rhsusf_opscore_cover {
+		author="Christiansen";
+		scope = 2;
+		scopeArsenal=2;
+		displayName = "[NTF] Opscore ST";
+		hiddenSelectionsTextures[] =
+		{
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_co.paa", // base of helmet
+			"", // mic
+			"", // strobe
+			"", // camera
+			"ntf_rhs\data\ntf_hlm_opscore_cover_wdl.paa", // cover
+			""
+		};
+	};
+
+	class ntf_hlm_ops_pelt_wdl : rhsusf_opscore_cover {
+		author="Christiansen";
+		scope = 2;
+		scopeArsenal=2;
+		displayName = "[NTF] Opscore ST (Headset)";
+		hiddenSelectionsTextures[] =
+		{
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_co.paa", // base of helmet
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa", // mic
+			"", // strobe
+			"", // camera
+			"ntf_rhs\data\ntf_hlm_opscore_cover_wdl.paa", // cover
+			""
+		};
+	};
+
+	class ntf_hlm_ops_pelt_str_wdl : rhsusf_opscore_cover {
+		author="Christiansen";
+		scope = 2;
+		scopeArsenal=2;
+		displayName = "[NTF] Opscore ST (Headset/Strobe)";
+		hiddenSelectionsTextures[] =
+		{
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_co.paa", // base of helmet
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa", // mic
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\nsw_co.paa", // strobe
+			"", // camera
+			"ntf_rhs\data\ntf_hlm_opscore_cover_wdl.paa", // cover
+			"\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa"
+		};
+	};
+
+	class ntf_hlm_ops_pelt_str_cam_wdl : rhsusf_opscore_cover {
+		author="Christiansen";
+		scope = 2;
+		scopeArsenal=2;
+		displayName = "[NTF] Opscore ST (Headset/Strobe/Cam)";
+		hiddenSelectionsTextures[] =
+		{
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_co.paa", // base of helmet
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa", // mic
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\nsw_co.paa", // strobe
+			"\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa", // camera
+			"ntf_rhs\data\ntf_hlm_opscore_cover_wdl.paa", // cover
 			"\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa"
 		};
 	};
