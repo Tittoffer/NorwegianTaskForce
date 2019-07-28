@@ -8,9 +8,10 @@ class CfgPatches {
 	class ntf_vsm {
 		requiredVersion = 0.1;
 		requiredAddons[]={
+			"VSM_ACU",
 			"VSM_Bags",
 			"VSM_ColdWeatherGear",
-			"VSM_G3",
+			"VSM_G2",
 			"VSM_Zenith_Headgear",
 			"VSM_Zenith_Vests"
 		};
