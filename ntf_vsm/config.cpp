@@ -8,9 +8,10 @@ class CfgPatches {
 	class ntf_vsm {
 		requiredVersion = 0.1;
 		requiredAddons[]={
+			"VSM_ACU",
 			"VSM_Bags",
 			"VSM_ColdWeatherGear",
-			"VSM_G3",
+			"VSM_G2",
 			"VSM_Zenith_Headgear",
 			"VSM_Zenith_Vests"
 		};
@@ -567,8 +568,13 @@ class CfgVehicles {
         scope = 2;
 		scopeArsenal = 2;
         displayName= "[NTF] Radiosekk (Sand)";
-		hiddenSelectionsTextures[] = {"ntf_vsm\data\ntf_pack_radiosekk_wdl.paa"};
 		picture = "";
+		tf_hasLRradio = 1;
+		tf_range = 30000;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog"; // Name of the dialog for vehicle-mounted radio
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;"; // The update function for dialog
+		tf_subtype = "digital_lr"; // Radio subtype – affects DSP effects. Valid values are – digital_lr, digital, airborne
     };
 
 	class VSM_RadarJammer_Ranger;
@@ -577,6 +583,13 @@ class CfgVehicles {
         scope = 2;
 		scopeArsenal = 2;
         displayName= "[NTF] Radiosekk (Skog)";
+		hiddenSelectionsTextures[] = {"ntf_vsm\data\ntf_pack_radiosekk_wdl.paa"};
 		picture = "";
+		tf_hasLRradio = 1;
+		tf_range = 30000;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog"; // Name of the dialog for vehicle-mounted radio
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;"; // The update function for dialog
+		tf_subtype = "digital_lr"; // Radio subtype – affects DSP effects. Valid values are – digital_lr, digital, airborne
     };
 };

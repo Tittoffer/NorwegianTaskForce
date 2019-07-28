@@ -60,8 +60,8 @@ class CfgPatches {
 			"ntf_weap_hk416_olive2",
 			"ntf_weap_hk416_sand",
 			"ntf_weap_hk416_sand2",
-			"ntf_hlm_cato_des",
-			"ntf_hlm_cato_wdl",
+			//"ntf_hlm_cato_des",
+			//"ntf_hlm_cato_wdl",
 			"ntf_hlm_ops",
 			"ntf_hlm_ops_pelt",
 			"ntf_hlm_ops_pelt_str",
@@ -159,7 +159,7 @@ class cfgWeapons {
 	};
 
 //========================================================================== CATO Hjelm =================================================================================
-
+/*
 	class rhsgref_helmet_pasgt_woodland_rhino;
 	class ntf_hlm_cato_des: rhsgref_helmet_pasgt_woodland_rhino {
 		scope = 2;
@@ -180,7 +180,7 @@ class cfgWeapons {
 			"ntf_rhs\data\ntf_hlm_cato_wdl.paa"
 		};
 	};
-
+*/
 //========================================================================== Opscore =================================================================================
 
 	class rhsusf_opscore_cover;
