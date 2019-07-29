@@ -31,8 +31,7 @@ class CfgPatches {
 			"A3_Soft_F_Gamma_Truck_01",
 			"A3_Soft_F_Beta_Truck_02",
 			"A3_Soft_F_Gamma_Truck_02",
-			"A3_Armor_F_EPB_APC_Tracked_03",
-			"I_APC_tracked_03_cannon_F"
+			"A3_Armor_F_EPB_APC_Tracked_03"
 		};
 		units[] = {
 			"ntf_cv90_wdl_vik",
