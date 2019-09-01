@@ -3,15 +3,15 @@
  //===========================================================================================================================================================
 
 class CfgPatches {
-	
+
 	class ntf_lmv_rws {
 		units[] = {"ntf_iveco_m240"};
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {
-			
+
 			"burnes_panther"
-			
+
 		};
 	};
 };
@@ -21,7 +21,7 @@ class CfgPatches {
 //===========================================================================================================================================================
 
  class cfgFactionClasses {
-	 
+
 	class NTF {
 		displayName = "Norwegian Task Force"; //Faction name in-game
 		author = "NTF_Saetre";
@@ -34,7 +34,7 @@ class CfgPatches {
 //========================================================================== VEHICLES =================================================================================
 
 class CfgVehicles {
-		
+
 	class burnes_panther;
 	class ntf_iveco_rws : burnes_panther
 	{
@@ -45,7 +45,7 @@ class CfgVehicles {
 		displayName = "Iveco LMV (RWS)";
 		crew="";
 		typicalCargo[]= {
-			
+
 			""
 		};
 		hiddenselectionstextures[] = {""};
@@ -62,7 +62,7 @@ class CfgVehicles {
 			   defaultComponents[] = {};
 			   mountedRadio = "ACRE_PRC117F";                 // Predefined mounted radio
 			   isRadioRemovable = 0;
-			   intercom[] = {};  
+			   intercom[] = {};
 		   };
 		   class Rack_2 {
 			   displayName = Long-Range 2; // Name is displayed in the interaction menu.
@@ -73,17 +73,28 @@ class CfgVehicles {
 			   defaultComponents[] = {};
 			   mountedRadio = "ACRE_PRC117F";                 // Predefined mounted radio
 			   isRadioRemovable = 0;
-			   intercom[] = {};  
+			   intercom[] = {};
+		   };
+		   class Rack_3 {
+			   displayName = Long-Range 3; // Name is displayed in the interaction menu.
+			   shortName = LR3;
+			   componentName = "ACRE_VRC103";
+			   allowedPositions[] = {"driver", "commander"}; // Who has access. "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
+			   disabledPositions[] = {};
+			   defaultComponents[] = {};
+			   mountedRadio = "ACRE_PRC117F";                 // Predefined mounted radio
+			   isRadioRemovable = 0;
+			   intercom[] = {};
 		   };
 		};
 		class TransportItems {
-			
+
 		};
 		class TransportWeapons {
-			
+
 		};
 		class TransportMagazines {
-			
+
 		};
 	};
 };
