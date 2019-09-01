@@ -51,7 +51,6 @@ class CfgVehicles {
 		hiddenselectionstextures[] = {""};
 		weapons[] = {"TruckHorn"};
 		magazines[] = {};
-			class AcreIntercoms {};
 			class AcreRacks {
 			class Rack_1 {
 			   displayName = Long-Range 1; // Name is displayed in the interaction menu.
