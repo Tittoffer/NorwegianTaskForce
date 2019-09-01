@@ -32,8 +32,8 @@ class CfgPatches {
 			"A3_Characters_F_BLUFOR",
 			"rhsusf_weapons",
 			"rhsusf_c_weapons",
-			"rhsusf_weapons2",
-			"rhsgref_c_troops"
+			"rhsusf_weapons2"//,
+			//"rhsgref_c_troops"
 		};
 
 		weapons[] = {
