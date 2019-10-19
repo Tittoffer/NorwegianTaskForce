@@ -72,7 +72,8 @@ class CfgPatches {
 			"ntf_hlm_ops_wdl",
 			"ntf_hlm_ops_pelt_wdl",
 			"ntf_hlm_ops_pelt_str_wdl",
-			"ntf_hlm_ops_pelt_str_cam_wdl"
+			"ntf_hlm_ops_pelt_str_cam_wdl",
+			"ntf_weap_rfk"
 
 		};
 
@@ -670,7 +671,7 @@ class cfgWeapons {
 		author="Christiansen";
 		scope=2;
 		scopeArsenal=2;
-		displayName="Carl Gustav RFK";
+		displayName="[NTF] Carl Gustav RFK";
 		baseWeapon="ntf_weap_rfk";
 		magazines[] = {"ntf_mag_rfk_HEAT","ntf_mag_rfk_HEDP","ntf_mag_rfk_HE"};
 		magazineWell[] = {CBA_RFK};
