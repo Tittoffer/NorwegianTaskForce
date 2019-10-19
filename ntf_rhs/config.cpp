@@ -32,8 +32,7 @@ class CfgPatches {
 			"A3_Characters_F_BLUFOR",
 			"rhsusf_weapons",
 			"rhsusf_c_weapons",
-			"rhsusf_weapons2"//,
-			//"rhsgref_c_troops"
+			"rhsusf_weapons2"
 		};
 
 		weapons[] = {
@@ -60,8 +59,8 @@ class CfgPatches {
 			"ntf_weap_hk416_olive2",
 			"ntf_weap_hk416_sand",
 			"ntf_weap_hk416_sand2",
-			//"ntf_hlm_cato_des",
-			//"ntf_hlm_cato_wdl",
+			"ntf_hlm_cato_des",
+			"ntf_hlm_cato_wdl",
 			"ntf_hlm_ops",
 			"ntf_hlm_ops_pelt",
 			"ntf_hlm_ops_pelt_str",
@@ -159,28 +158,30 @@ class cfgWeapons {
 	};
 
 //========================================================================== CATO Hjelm =================================================================================
-/*
-	class rhsgref_helmet_pasgt_woodland_rhino;
-	class ntf_hlm_cato_des: rhsgref_helmet_pasgt_woodland_rhino {
+
+	class rhsusf_mich_helmet_marpatwd_alt;
+	class ntf_hlm_cato_des: rhsusf_mich_helmet_marpatwd_alt {
 		scope = 2;
 		scopeArsenal=2;
 		displayName="[NTF] Cato hjelm (Sand)";
-		author="T. Andreassen";
+		author="Christiansen";
 		hiddenSelectionsTextures[]= {
-			"ntf_rhs\data\ntf_hlm_cato_des.paa"
+			"ntf_rhs\data\ntf_hlm_cato_des.paa",
+			"ntf_rhs\data\ntf_hlm_cato_acc.paa"
 		};
 	};
 
-	class ntf_hlm_cato_wdl: rhsgref_helmet_pasgt_woodland_rhino {
+	class ntf_hlm_cato_wdl: rhsusf_mich_helmet_marpatwd_alt {
 		scope = 2;
 		scopeArsenal=2;
 		displayName="[NTF] Cato Hjelm (Skog)";
-		author="T. Andreassen";
+		author="Christiansen";
 		hiddenSelectionsTextures[]= {
-			"ntf_rhs\data\ntf_hlm_cato_wdl.paa"
+			"ntf_rhs\data\ntf_hlm_cato_wdl.paa",
+			"ntf_rhs\data\ntf_hlm_cato_acc.paa"
 		};
 	};
-*/
+
 //========================================================================== Opscore =================================================================================
 
 	class rhsusf_opscore_cover;

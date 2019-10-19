@@ -940,6 +940,31 @@ class CfgVehicles {
 				};
 			};
 		};
+
+		class AcreRacks {
+			class Rack_1 {
+			   displayName = Long-Range 1; // Name is displayed in the interaction menu.
+			   shortName = LR1;
+			   componentName = "ACRE_VRC103";
+			   allowedPositions[] = {"driver", "commander"}; // Who has access. "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
+			   disabledPositions[] = {};
+			   defaultComponents[] = {};
+			   mountedRadio = "ACRE_PRC117F";                 // Predefined mounted radio
+			   isRadioRemovable = 0;
+			   intercom[] = {};
+		   };
+		   class Rack_2 {
+			   displayName = Long-Range 2; // Name is displayed in the interaction menu.
+			   shortName = LR2;
+			   componentName = "ACRE_VRC103";
+			   allowedPositions[] = {"driver", "commander"}; // Who has access. "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
+			   disabledPositions[] = {};
+			   defaultComponents[] = {};
+			   mountedRadio = "ACRE_PRC117F";                 // Predefined mounted radio
+			   isRadioRemovable = 0;
+			   intercom[] = {};
+			};
+		};
 	};
 
 	class NTF_CV90_Des_Vik : I_APC_tracked_03_cannon_F {
@@ -1006,6 +1031,31 @@ class CfgVehicles {
 					"ntf_200rnd_762_fnmag_coax",
 					"ntf_200rnd_762_fnmag_coax"
 				};
+			};
+		};
+
+		class AcreRacks {
+			class Rack_1 {
+			   displayName = Long-Range 1; // Name is displayed in the interaction menu.
+			   shortName = LR1;
+			   componentName = "ACRE_VRC103";
+			   allowedPositions[] = {"driver", "commander"}; // Who has access. "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
+			   disabledPositions[] = {};
+			   defaultComponents[] = {};
+			   mountedRadio = "ACRE_PRC117F";                 // Predefined mounted radio
+			   isRadioRemovable = 0;
+			   intercom[] = {};
+		   };
+		   class Rack_2 {
+			   displayName = Long-Range 2; // Name is displayed in the interaction menu.
+			   shortName = LR2;
+			   componentName = "ACRE_VRC103";
+			   allowedPositions[] = {"driver", "commander"}; // Who has access. "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
+			   disabledPositions[] = {};
+			   defaultComponents[] = {};
+			   mountedRadio = "ACRE_PRC117F";                 // Predefined mounted radio
+			   isRadioRemovable = 0;
+			   intercom[] = {};
 			};
 		};
 	};
@@ -1079,6 +1129,31 @@ class CfgVehicles {
 				};
 			};
 		};
+
+		class AcreRacks {
+			class Rack_1 {
+			   displayName = Long-Range 1; // Name is displayed in the interaction menu.
+			   shortName = LR1;
+			   componentName = "ACRE_VRC103";
+			   allowedPositions[] = {"driver", "commander"}; // Who has access. "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
+			   disabledPositions[] = {};
+			   defaultComponents[] = {};
+			   mountedRadio = "ACRE_PRC117F";                 // Predefined mounted radio
+			   isRadioRemovable = 0;
+			   intercom[] = {};
+		   };
+		   class Rack_2 {
+			   displayName = Long-Range 2; // Name is displayed in the interaction menu.
+			   shortName = LR2;
+			   componentName = "ACRE_VRC103";
+			   allowedPositions[] = {"driver", "commander"}; // Who has access. "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
+			   disabledPositions[] = {};
+			   defaultComponents[] = {};
+			   mountedRadio = "ACRE_PRC117F";                 // Predefined mounted radio
+			   isRadioRemovable = 0;
+			   intercom[] = {};
+			};
+		};
 	};
 
 	class NTF_CV90_Wdl_Vet : I_APC_tracked_03_cannon_F {
@@ -1144,6 +1219,31 @@ class CfgVehicles {
 					"ntf_200rnd_762_fnmag_coax",
 					"ntf_200rnd_762_fnmag_coax"
 				};
+			};
+		};
+
+		class AcreRacks {
+			class Rack_1 {
+			   displayName = Long-Range 1; // Name is displayed in the interaction menu.
+			   shortName = LR1;
+			   componentName = "ACRE_VRC103";
+			   allowedPositions[] = {"driver", "commander"}; // Who has access. "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
+			   disabledPositions[] = {};
+			   defaultComponents[] = {};
+			   mountedRadio = "ACRE_PRC117F";                 // Predefined mounted radio
+			   isRadioRemovable = 0;
+			   intercom[] = {};
+		   };
+		   class Rack_2 {
+			   displayName = Long-Range 2; // Name is displayed in the interaction menu.
+			   shortName = LR2;
+			   componentName = "ACRE_VRC103";
+			   allowedPositions[] = {"driver", "commander"}; // Who has access. "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
+			   disabledPositions[] = {};
+			   defaultComponents[] = {};
+			   mountedRadio = "ACRE_PRC117F";                 // Predefined mounted radio
+			   isRadioRemovable = 0;
+			   intercom[] = {};
 			};
 		};
 	};
@@ -1213,6 +1313,31 @@ class CfgVehicles {
 				};
 			};
 		};
+
+		class AcreRacks {
+			class Rack_1 {
+			   displayName = Long-Range 1; // Name is displayed in the interaction menu.
+			   shortName = LR1;
+			   componentName = "ACRE_VRC103";
+			   allowedPositions[] = {"driver", "commander"}; // Who has access. "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
+			   disabledPositions[] = {};
+			   defaultComponents[] = {};
+			   mountedRadio = "ACRE_PRC117F";                 // Predefined mounted radio
+			   isRadioRemovable = 0;
+			   intercom[] = {};
+		   };
+		   class Rack_2 {
+			   displayName = Long-Range 2; // Name is displayed in the interaction menu.
+			   shortName = LR2;
+			   componentName = "ACRE_VRC103";
+			   allowedPositions[] = {"driver", "commander"}; // Who has access. "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
+			   disabledPositions[] = {};
+			   defaultComponents[] = {};
+			   mountedRadio = "ACRE_PRC117F";                 // Predefined mounted radio
+			   isRadioRemovable = 0;
+			   intercom[] = {};
+			};
+		};
 	};
 
 	class NTF_CV90_win_Vet : I_APC_tracked_03_cannon_F {
@@ -1278,6 +1403,31 @@ class CfgVehicles {
 					"ntf_200rnd_762_fnmag_coax",
 					"ntf_200rnd_762_fnmag_coax"
 				};
+			};
+		};
+
+		class AcreRacks {
+			class Rack_1 {
+			   displayName = Long-Range 1; // Name is displayed in the interaction menu.
+			   shortName = LR1;
+			   componentName = "ACRE_VRC103";
+			   allowedPositions[] = {"driver", "commander"}; // Who has access. "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
+			   disabledPositions[] = {};
+			   defaultComponents[] = {};
+			   mountedRadio = "ACRE_PRC117F";                 // Predefined mounted radio
+			   isRadioRemovable = 0;
+			   intercom[] = {};
+		   };
+		   class Rack_2 {
+			   displayName = Long-Range 2; // Name is displayed in the interaction menu.
+			   shortName = LR2;
+			   componentName = "ACRE_VRC103";
+			   allowedPositions[] = {"driver", "commander"}; // Who has access. "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
+			   disabledPositions[] = {};
+			   defaultComponents[] = {};
+			   mountedRadio = "ACRE_PRC117F";                 // Predefined mounted radio
+			   isRadioRemovable = 0;
+			   intercom[] = {};
 			};
 		};
 	};
