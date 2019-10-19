@@ -118,7 +118,7 @@ class CfgMagazines {
 		author="Christiansen";
 		scope=2;
 		displayName="[NTF] FFV441 HE";
-		initSpeed=270;
+		initSpeed=290;
 	};
 
 	class rhs_mag_maaws_HEAT;
