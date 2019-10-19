@@ -106,6 +106,55 @@ class CfgPatches {
 };
 
 //===========================================================================================================================================================
+//========================================================================== cfgMagazine =================================================================================
+//===========================================================================================================================================================
+class CfgMagazines {
+	class CA_Magazine;
+	class CA_LauncherMagazine;
+
+	class rhs_mag_maaws_HE;
+	class ntf_mag_rfk_HE : rhs_mag_maaws_HE {
+		author="Christiansen";
+		scope=2;
+		displayName="[NTF] FFV441 HE";
+		initSpeed=270;
+	};
+
+	class rhs_mag_maaws_HEAT;
+	class ntf_mag_rfk_HEAT : rhs_mag_maaws_HEAT {
+		author="Christiansen";
+		scope=2;
+		displayName="[NTF] FFV651 HEAT";
+		displaynameshort="651 HEAT";
+		initSpeed=290;
+	};
+
+	class rhs_mag_maaws_HEDP;
+	class ntf_mag_rfk_HEDP : rhs_mag_maaws_HEDP {
+		author="Christiansen";
+		scope=2;
+		displayName="[NTF] FFV502 HEDP";
+		initSpeed=230;
+	};
+};
+
+
+class CfgMagazineWells {
+
+	class CBA_RFK
+	{
+		RHS_Magazines[] =
+		{
+			"ntf_mag_rfk_HEAT",
+			"ntf_mag_rfk_HEDP",
+			"ntf_mag_rfk_HE"
+			//"rhs_mag_maaws_SMOKE",
+			//"rhs_mag_maaws_ILLUM"
+		};
+	};
+};
+
+//===========================================================================================================================================================
 //========================================================================== cfgWeapons =================================================================================
 //===========================================================================================================================================================
 
@@ -613,8 +662,20 @@ class cfgWeapons {
 			"\rhsusf\addons\rhsusf_weapons\m320\data\m320_co.paa"
 		};
 	};
-};
 
+//========================================================================== RFK =================================================================================
+
+	class rhs_weap_maaws;
+	class ntf_weap_rfk: rhs_weap_maaws {
+		author="Christiansen";
+		scope=2;
+		scopeArsenal=2;
+		displayName="Carl Gustav RFK";
+		baseWeapon="ntf_weap_rfk";
+		magazines[] = {"ntf_mag_rfk_HEAT","ntf_mag_rfk_HEDP","ntf_mag_rfk_HE"};
+		magazineWell[] = {CBA_RFK};
+	};
+};
 
 //===========================================================================================================================================================
 //========================================================================== cfgVehicles =================================================================================
