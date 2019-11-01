@@ -676,7 +676,7 @@ class cfgWeapons {
 		author="Christiansen";
 		scope=2;
 		scopeArsenal=2;
-		displayName="M249N Mini-Me";
+		displayName="FN MiniMi (Kort)";
 		hiddenSelectionsTextures[]= {
 			"ntf_rhs\data\ntf_weap_m249_reciever.paa",
 			"ntf_rhs\data\ntf_weap_m249_body.paa",
@@ -768,6 +768,107 @@ class cfgWeapons {
 			"\rhsusf\addons\rhsusf_c_weapons\anims\rhs_hand_m249_grippod.rtm"
 		};
 		rhs_fold="ntf_weap_m249_short_vfg3";
+	};
+
+//========================================================================== M249 L Para =================================================================================
+
+	class rhs_weap_m249_pip_L_para;
+	class ntf_weap_m249_long : rhs_weap_m249_pip_L_para {
+		author="Christiansen";
+		scope=2;
+		scopeArsenal=2;
+		displayName="FN MiniMi (Lang)";
+		hiddenSelectionsTextures[]= {
+			"ntf_rhs\data\ntf_weap_m249_reciever.paa",
+			"ntf_rhs\data\ntf_weap_m249_body.paa",
+			"ntf_rhs\data\ntf_weap_m249_barrelstock.paa",
+			"rhsusf\addons\rhsusf_weapons2\m249\merged\data\ammobox_merged_co.paa",
+			"ntf_rhs\data\ntf_weap_m249_stock.paa"
+		};
+		baseWeapon="ntf_weap_m249_long";
+		rhs_grip1_change="ntf_weap_m249_long_vfg1";
+		rhs_grip2_change="ntf_weap_m249_long_vfg2";
+		rhs_grip3_change="ntf_weap_m249_long_vfg3";
+		rhs_fold_checkOptic=0;
+		rhs_fold="ntf_weap_m249_long_folded";
+	};
+
+	class ntf_weap_m249_long_vfg1: ntf_weap_m249_long
+	{
+		author="Christiansen";
+		handanim[]=
+		{
+			"OFP2_ManSkeleton",
+			"\rhsusf\addons\rhsusf_c_weapons\anims\rhs_hand_m249_grippod.rtm"
+		};
+		rhs_fold="rhs_weap_m249_pip_S_para_folded_vfg1";
+	};
+
+	class ntf_weap_m249_long_vfg2: ntf_weap_m249_long
+	{
+		author="Christiansen";
+		handanim[]=
+		{
+			"OFP2_ManSkeleton",
+			"\rhsusf\addons\rhsusf_c_weapons\anims\rhs_hand_m249_VFG.rtm"
+		};
+		rhs_fold="rhs_weap_m249_pip_S_para_folded_vfg2";
+	};
+
+	class ntf_weap_m249_long_vfg3: ntf_weap_m249_long
+	{
+		author="Christiansen";
+		handanim[]=
+		{
+			"OFP2_ManSkeleton",
+			"\rhsusf\addons\rhsusf_c_weapons\anims\rhs_hand_m249_grippod.rtm"
+		};
+		rhs_fold="rhs_weap_m249_pip_S_para_folded_vfg3";
+	};
+
+	class ntf_weap_m249_long_folded: ntf_weap_m249_long
+	{
+		author="Christiansen";
+		scope=1;
+		model="\rhsusf\addons\rhsusf_weapons2\M249\merged\m249_pip_S_para_folded.p3d";
+		recoil="rhs_recoil_m240";
+		rhs_grip1_change="ntf_weap_m249_long_folded_vfg1";
+		rhs_grip2_change="ntf_weap_m249_long_folded_vfg2";
+		rhs_grip3_change="ntf_weap_m249_long_folded_vfg3";
+		rhs_fold="ntf_weap_m249_long";
+	};
+
+	class ntf_weap_m249_long_folded_vfg1: ntf_weap_m249_long_folded
+	{
+		author="Christiansen";
+		handanim[]=
+		{
+			"OFP2_ManSkeleton",
+			"\rhsusf\addons\rhsusf_c_weapons\anims\rhs_hand_m249_grippod.rtm"
+		};
+		rhs_fold="ntf_weap_m249_long_vfg1";
+	};
+
+	class ntf_weap_m249_long_folded_vfg2: ntf_weap_m249_long_folded
+	{
+		author="Christiansen";
+		handanim[]=
+		{
+			"OFP2_ManSkeleton",
+			"\rhsusf\addons\rhsusf_c_weapons\anims\rhs_hand_m249_VFG.rtm"
+		};
+		rhs_fold="ntf_weap_m249_long_vfg2";
+	};
+
+	class ntf_weap_m249_long_folded_vfg3: ntf_weap_m249_long_folded
+	{
+		author="Christiansen";
+		handanim[]=
+		{
+			"OFP2_ManSkeleton",
+			"\rhsusf\addons\rhsusf_c_weapons\anims\rhs_hand_m249_grippod.rtm"
+		};
+		rhs_fold="ntf_weap_m249_long_vfg3";
 	};
 
 //========================================================================== RFK =================================================================================
