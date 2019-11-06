@@ -252,7 +252,7 @@ class cfgWeapons {
 		scopeArsenal = 2;
 		author = "Christiansen";
 		picture="ntf_vsm\data\ntf_insignia.paa";
-        displayName= "[NTF] Membranuniform (Sno+Skog)";
+        displayName= "[NTF] Gore-Tex (Sno+Skog)";
 		modelsides[]={3,2,1,0};
 		model="VSM_ColdWeatherGear\Models\VSM_ColdWeather_1.p3d";
 		hiddenSelections[]= {
@@ -273,7 +273,7 @@ class cfgWeapons {
 		scopeArsenal = 2;
 		author = "Christiansen";
 		picture="ntf_vsm\data\ntf_insignia.paa";
-        displayName= "[NTF] Membranuniform (Skog+sno)";
+        displayName= "[NTF] Gore-Tex (Skog+sno)";
 		modelsides[]={3,2,1,0};
 		model="VSM_ColdWeatherGear\Models\VSM_ColdWeather_1.p3d";
 		hiddenSelections[]= {
@@ -294,7 +294,7 @@ class cfgWeapons {
 		scopeArsenal = 2;
 		author = "Christiansen";
 		picture="ntf_vsm\data\ntf_insignia.paa";
-        displayName= "[NTF] Membranuniform (Sno)";
+        displayName= "[NTF] Gore-Tex (Sno)";
 		modelsides[]={3,2,1,0};
 		model="VSM_ColdWeatherGear\Models\VSM_ColdWeather_1.p3d";
 		hiddenSelections[]= {
@@ -315,7 +315,7 @@ class cfgWeapons {
 		scopeArsenal = 2;
 		author = "Christiansen";
 		picture="ntf_vsm\data\ntf_insignia.paa";
-        displayName= "[NTF] Membranuniform (Skog)";
+        displayName= "[NTF] Gore-Tex (Skog)";
 		modelsides[]={3,2,1,0};
 		model="VSM_ColdWeatherGear\Models\VSM_ColdWeather_1.p3d";
 		hiddenSelections[]= {
@@ -361,7 +361,7 @@ class cfgWeapons {
 		scopeArsenal = 2;
 		author = "Christiansen";
 		picture="ntf_vsm\data\ntf_insignia.paa";
-        displayName= "[NTF] G3 Uniform Brettet (Skog)";
+        displayName= "[NTF] G3 Uniform (Brettet / Skog)";
 		modelsides[]={3,2,1,0};
 		model="VSM_G2\Models\VSM_final_Crye_Gen2_rolled.p3d";
 		hiddenSelections[]= {
@@ -411,7 +411,7 @@ class cfgWeapons {
 		scopeArsenal = 2;
 		author = "Christiansen";
 		picture="ntf_vsm\data\ntf_insignia.paa";
-        displayName= "[NTF] G3 Uniform Brettet (Sand)";
+        displayName= "[NTF] G3 Uniform (Brettet / Sand)";
 		modelsides[]={3,2,1,0};
 		model="VSM_G2\Models\VSM_final_Crye_Gen2_rolled.p3d";
 		hiddenSelections[]= {
@@ -466,7 +466,7 @@ class CfgVehicles {
 	class ntf_cwg_win_wdl : B_Soldier_F {
         _generalMacro = "B_Soldier_F"; //unsure what this does
         scope = 1;
-        displayName= "[NTF] Vinter Uniform (Sno+Skog)";
+        displayName= "[NTF] Gore-Tex (Sno+Skog)";
         uniformAccessories[] = {};
         nakedUniform = "U_BasicBody"; //class for "naked" body
         uniformClass = "ntf_cwg_win_wdl"; //the uniform item
@@ -478,7 +478,7 @@ class CfgVehicles {
 	class ntf_cwg_wdl_win : B_Soldier_F {
         _generalMacro = "B_Soldier_F"; //unsure what this does
         scope = 1;
-        displayName= "[NTF] Vinter Uniform (Skog+sno)";
+        displayName= "[NTF] Gore-Tex (Skog+sno)";
         uniformAccessories[] = {};
         nakedUniform = "U_BasicBody"; //class for "naked" body
         uniformClass = "ntf_cwg_wdl_win"; //the uniform item
@@ -490,7 +490,7 @@ class CfgVehicles {
 	class ntf_cwg_win : B_Soldier_F {
         _generalMacro = "B_Soldier_F"; //unsure what this does
         scope = 1;
-        displayName= "[NTF] Vinter Uniform (Sno+Skog)";
+        displayName= "[NTF] Gore-Tex (Sno+Skog)";
         uniformAccessories[] = {};
         nakedUniform = "U_BasicBody"; //class for "naked" body
         uniformClass = "ntf_cwg_win"; //the uniform item
@@ -502,7 +502,7 @@ class CfgVehicles {
 	class ntf_cwg_wdl : B_Soldier_F {
         _generalMacro = "B_Soldier_F"; //unsure what this does
         scope = 1;
-        displayName= "[NTF] Vinter Uniform (Skog)";
+        displayName= "[NTF] Gore-Tex (Skog)";
         uniformAccessories[] = {};
         nakedUniform = "U_BasicBody"; //class for "naked" body
         uniformClass = "ntf_cwg_wdl"; //the uniform item
@@ -526,7 +526,7 @@ class CfgVehicles {
 	class ntf_g3_roll_wdl : B_Soldier_F {
         _generalMacro = "B_Soldier_F"; //unsure what this does
         scope = 1;
-        displayName= "[NTF] G3 Uniform brettet (Skog)";
+        displayName= "[NTF] G3 Uniform (Brettet / Skog)";
         uniformAccessories[] = {};
         nakedUniform = "U_BasicBody"; //class for "naked" body
         uniformClass = "ntf_g3_roll_wdl"; //the uniform item
@@ -550,7 +550,7 @@ class CfgVehicles {
 	class ntf_g3_roll_des : B_Soldier_F {
         _generalMacro = "B_Soldier_F"; //unsure what this does
         scope = 1;
-        displayName= "[NTF] G3 Uniform brettet (Sand)";
+        displayName= "[NTF] G3 Uniform (Brettet / Sand)";
         uniformAccessories[] = {};
         nakedUniform = "U_BasicBody"; //class for "naked" body
         uniformClass = "ntf_g3_roll_des"; //the uniform item
