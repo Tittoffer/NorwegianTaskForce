@@ -74,7 +74,8 @@ class CfgPatches {
 			"ntf_hlm_ops_pelt_str_wdl",
 			"ntf_hlm_ops_pelt_str_cam_wdl",
 			"ntf_weap_rfk",
-			"ntf_weap_m249_short"
+			"ntf_weap_m249_short",
+			"ntf_weap_m249_long"
 
 		};
 
