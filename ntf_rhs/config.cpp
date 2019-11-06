@@ -429,6 +429,71 @@ class cfgWeapons {
 		};
 	};
 
+	class rhsusf_opscore_paint_pelt_nsw_cam;
+	class ntf_hlm_ops_spr : rhsusf_opscore_paint_pelt_nsw_cam {
+		author="Christiansen";
+		scope = 2;
+		scopeArsenal=2;
+		displayName = "[NTF] Opscore SPR";
+		hiddenSelectionsTextures[] =
+		{
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_Paint1_co.paa",
+			"", // mic
+			"", // strobe
+			"", // camera
+			"", // cover
+			""
+		};
+	};
+
+	class ntf_hlm_ops_pelt_spr : rhsusf_opscore_paint_pelt_nsw_cam {
+		author="Christiansen";
+		scope = 2;
+		scopeArsenal=2;
+		displayName = "[NTF] Opscore SPR (Headset)";
+		hiddenSelectionsTextures[] =
+		{
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_Paint1_co.paa",
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa", // mic
+			"", // strobe
+			"", // camera
+			"", // cover
+			""
+		};
+	};
+
+	class ntf_hlm_ops_pelt_str_spr : rhsusf_opscore_paint_pelt_nsw_cam {
+		author="Christiansen";
+		scope = 2;
+		scopeArsenal=2;
+		displayName = "[NTF] Opscore SPR (Headset / Strobe)";
+		hiddenSelectionsTextures[] =
+		{
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_Paint3_co.paa",
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa",
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\nsw_co.paa", // strobe
+			"", // camera
+			"",
+			"\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa"
+		};
+	};
+
+	class ntf_hlm_ops_pelt_str_cam_spr : rhsusf_opscore_paint_pelt_nsw_cam {
+		author="Christiansen";
+		scope = 2;
+		scopeArsenal=2;
+		displayName = "[NTF] Opscore SPR (Headset / Strobe / Camera)";
+		hiddenSelectionsTextures[] =
+		{
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_Paint3_co.paa",
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa",
+			"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\nsw_co.paa", // strobe
+			"\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa", // camera
+			"",
+			"\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa"
+		};
+	};
+
 //========================================================================== SPC =================================================================================
 
 	class rhsusf_spc_corpsman;
@@ -1216,4 +1281,54 @@ class CfgVehicles {
 		ace_cargo_space = 5;
 		ace_cargo_hasCargo = 1;
 	};
+
+//========================================================================== UMBTS =================================================================================
+
+	class B_AssaultPack_Base;
+
+	class rhs_assault_umbts;
+	class ntf_pack_stridssekk_wdl : rhs_assault_umbts {
+		scope = 2;
+		author = "Christiansen";
+		model = "\rhsafrf\addons\rhs_infantry\gear\backpacks\rhs_assault_umtbs";
+		picture = "";
+		displayName = "[NTF] Stridssekk (Skog)";
+		hiddenSelectionsTextures[] = {"ntf_rhs\data\ntf_pack_stridssekk_wdl.paa"};
+		maximumLoad = 140;
+		mass = 20;
+	};
+
+	class ntf_pack_stridssekk_ing_wdl : rhs_assault_umbts {
+		scope = 2;
+		author = "Christiansen";
+		model = "\rhsafrf\addons\rhs_infantry\gear\backpacks\rhs_assault_umtbs_engineer";
+		picture = "";
+		displayName = "[NTF] Stridssekk ING (Skog)";
+		hiddenSelectionsTextures[] = {"ntf_rhs\data\ntf_pack_stridssekk_wdl.paa"};
+		maximumLoad = 140;
+		mass = 20;
+	};
+
+	class ntf_pack_stridssekk_des : rhs_assault_umbts {
+		scope = 2;
+		author = "Christiansen";
+		model = "\rhsafrf\addons\rhs_infantry\gear\backpacks\rhs_assault_umtbs";
+		picture = "";
+		displayName = "[NTF] Stridssekk (Sand)";
+		hiddenSelectionsTextures[] = {"ntf_rhs\data\ntf_pack_stridssekk_des.paa"};
+		maximumLoad = 140;
+		mass = 20;
+	};
+
+	class ntf_pack_stridssekk_ing_des : rhs_assault_umbts {
+		scope = 2;
+		author = "Christiansen";
+		model = "\rhsafrf\addons\rhs_infantry\gear\backpacks\rhs_assault_umtbs_engineer";
+		picture = "";
+		displayName = "[NTF] Stridssekk ING (Sand)";
+		hiddenSelectionsTextures[] = {"ntf_rhs\data\ntf_pack_stridssekk_des.paa"};
+		maximumLoad = 140;
+		mass = 20;
+	};
+
 };
