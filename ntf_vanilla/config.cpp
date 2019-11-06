@@ -334,44 +334,44 @@ class CfgVehicles {
 		ACE_GForceCoef = 0.25;
 	};
 
-//============================================================== Stridssekk =============================================================================================
+//============================================================== feltsekk =============================================================================================
 
 	class B_Kitbag_rgr;
-	class ntf_pack_stridssekk_san_wdl: B_Kitbag_rgr {
+	class ntf_pack_feltsekk_san_wdl: B_Kitbag_rgr {
         author = "Christiansen";
         scope = 2;
 		scopeArsenal = 2;
-        displayName= "[NTF] Stridssekk Sanitet (Skog)";
+        displayName= "[NTF] Feltsekk Sanitet (Skog)";
 		picture="\ntf_vanilla\data\ntf_insignia.paa";
-        hiddenSelectionsTextures[]={"\ntf_vanilla\data\ntf_stridssekk_wdl_san.paa"};
+        hiddenSelectionsTextures[]={"\ntf_vanilla\data\ntf_feltsekk_wdl_san.paa"};
     };
 
-    class ntf_pack_stridssekk_wdl: B_Kitbag_rgr {
+    class ntf_pack_feltsekk_wdl: B_Kitbag_rgr {
         author = "Christiansen";
         scope = 2;
 		scopeArsenal = 2;
-        displayName= "[NTF] Stridssekk (Skog)";
+        displayName= "[NTF] Feltsekk (Skog)";
 		picture="\ntf_vanilla\data\ntf_insignia.paa";
-        hiddenSelectionsTextures[]={"\ntf_vanilla\data\ntf_stridssekk_wdl.paa"};
+        hiddenSelectionsTextures[]={"\ntf_vanilla\data\ntf_feltsekk_wdl.paa"};
     };
 
 	class B_Kitbag_cbr;
-	class ntf_pack_stridssekk_san_des: B_Kitbag_cbr {
+	class ntf_pack_feltsekk_san_des: B_Kitbag_cbr {
         author = "Christiansen";
         scope = 2;
 		scopeArsenal = 2;
-        displayName= "[NTF] Stridssekk Sanitet (Sand)";
+        displayName= "[NTF] Feltsekk Sanitet (Sand)";
 		picture="\ntf_vanilla\data\ntf_insignia.paa";
-        hiddenSelectionsTextures[]={"\ntf_vanilla\data\ntf_stridssekk_des_san.paa"};
+        hiddenSelectionsTextures[]={"\ntf_vanilla\data\ntf_feltsekk_des_san.paa"};
     };
 
-    class ntf_pack_stridssekk_des: B_Kitbag_cbr {
+    class ntf_pack_feltsekk_des: B_Kitbag_cbr {
         author = "Christiansen";
         scope = 2;
 		scopeArsenal = 2;
-        displayName= "[NTF] Stridssekk (Sand)";
+        displayName= "[NTF] Feltsekk (Sand)";
 		picture="\ntf_vanilla\data\ntf_insignia.paa";
-        hiddenSelectionsTextures[]={"\ntf_vanilla\data\ntf_stridssekk_des.paa"};
+        hiddenSelectionsTextures[]={"\ntf_vanilla\data\ntf_feltsekk_des.paa"};
     };
 
 //=================================================================== Patruljesekk ================================================================================================
@@ -452,16 +452,6 @@ class CfgVehicles {
 		maximumLoad = 400;
     };
 
-	class ntf_pack_storsekk_san_des: B_Carryall_cbr {
-        author = "Henriksen";
-        scope = 2;
-		scopeArsenal = 2;
-		model="A3\weapons_f\Ammoboxes\Bags\Backpack_Tortila.p3d";
-        displayName= "[NTF] Storsekk Sanitet (Sand)";
-		picture="\ntf_vanilla\data\ntf_insignia.paa";
-        hiddenSelectionsTextures[]={"\ntf_vanilla\data\ntf_storsekk_des_san.paa"};
-		maximumLoad = 400;
-    };
 
 	class ntf_pack_storsekk_wdl: B_Carryall_cbr {
         author = "Henriksen";
@@ -474,16 +464,6 @@ class CfgVehicles {
 		maximumLoad = 400;
     };
 
-	class ntf_pack_storsekk_san_wdl: B_Carryall_cbr {
-        author = "Henriksen";
-        scope = 2;
-		scopeArsenal = 2;
-		model="A3\weapons_f\Ammoboxes\Bags\Backpack_Tortila.p3d";
-        displayName= "[NTF] Storsekk Sanitet (Skog)";
-		picture="\ntf_vanilla\data\ntf_insignia.paa";
-        hiddenSelectionsTextures[]={"\ntf_vanilla\data\ntf_storsekk_wdl_san.paa"};
-		maximumLoad = 400;
-    };
 
 //=========================================================================== Forsyningskasse ===============================================================
 
