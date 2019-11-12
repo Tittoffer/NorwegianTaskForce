@@ -948,6 +948,9 @@ class cfgWeapons {
 		baseWeapon="ntf_weap_rfk";
 		magazines[] = {"ntf_mag_rfk_HEAT","ntf_mag_rfk_HEDP","ntf_mag_rfk_HE"};
 		magazineWell[] = {CBA_RFK};
+		ace_overpressure_angle = 30;  // Cone in which the damage is applied (in degrees from the back end of the launcher)
+        ace_overpressure_range = 8;  // Range in meters in which the damage is applied
+        ace_overpressure_damage = 0.5;  // Damage multiplier
 	};
 };
 
