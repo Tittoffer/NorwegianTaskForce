@@ -180,6 +180,8 @@ class cfgWeapons {
 		author = "Christiansen";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"ntf_rhs\data\ntf_heli_helm.paa"};
+		ace_hearing_protection = 0.90;
+        ace_hearing_lowerVolume = 0.60;
 	};
 
 	class rhsusf_hgu56p_mask_black;
@@ -189,6 +191,8 @@ class cfgWeapons {
 		author = "Christiansen";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"ntf_rhs\data\ntf_heli_helm.paa"};
+		ace_hearing_protection = 0.90;
+        ace_hearing_lowerVolume = 0.60;
 	};
 
 	class rhsusf_hgu56p_visor_black;
@@ -198,6 +202,8 @@ class cfgWeapons {
 		author = "Christiansen";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"ntf_rhs\data\ntf_heli_helm.paa"};
+		ace_hearing_protection = 0.90;
+        ace_hearing_lowerVolume = 0.60;
 	};
 
 	class rhsusf_hgu56p_visor_mask_green;
@@ -207,6 +213,8 @@ class cfgWeapons {
 		author = "Christiansen";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"ntf_rhs\data\ntf_heli_helm.paa"};
+		ace_hearing_protection = 0.90;
+        ace_hearing_lowerVolume = 0.60;
 	};
 
 //========================================================================== CATO Hjelm =================================================================================
