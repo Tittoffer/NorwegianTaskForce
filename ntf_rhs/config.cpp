@@ -742,7 +742,7 @@ class cfgWeapons {
 		author="Christiansen";
 		scope=2;
 		scopeArsenal=2;
-		displayName="FN MiniMi (Kort)";
+		displayName="FN Minimi (Kort)";
 		hiddenSelectionsTextures[]= {
 			"ntf_rhs\data\ntf_weap_m249_reciever.paa",
 			"ntf_rhs\data\ntf_weap_m249_body.paa",
@@ -843,7 +843,7 @@ class cfgWeapons {
 		author="Christiansen";
 		scope=2;
 		scopeArsenal=2;
-		displayName="FN MiniMi (Lang)";
+		displayName="FN Minimi (Lang)";
 		hiddenSelectionsTextures[]= {
 			"ntf_rhs\data\ntf_weap_m249_reciever.paa",
 			"ntf_rhs\data\ntf_weap_m249_body.paa",
