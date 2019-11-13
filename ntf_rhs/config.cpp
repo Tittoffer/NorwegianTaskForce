@@ -267,6 +267,8 @@ class cfgWeapons {
 			"", // cover
 			""
 		};
+		ace_hearing_protection = 0.80;
+		ace_hearing_lowerVolume = 0.50;
 	};
 
 	class ntf_hlm_ops_pelt_str : rhsusf_opscore_cover {
@@ -283,6 +285,8 @@ class cfgWeapons {
 			"", // cover
 			"\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa"
 		};
+		ace_hearing_protection = 0.80;
+		ace_hearing_lowerVolume = 0.50;
 	};
 
 	class ntf_hlm_ops_pelt_str_cam : rhsusf_opscore_cover {
@@ -299,6 +303,8 @@ class cfgWeapons {
 			"", // cover
 			"\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa"
 		};
+		ace_hearing_protection = 0.80;
+		ace_hearing_lowerVolume = 0.50;
 	};
 
 	class ntf_hlm_ops_win : rhsusf_opscore_cover {
@@ -331,6 +337,8 @@ class cfgWeapons {
 			"ntf_rhs\data\ntf_hlm_opscore_cover_win.paa", // cover
 			""
 		};
+		ace_hearing_protection = 0.80;
+		ace_hearing_lowerVolume = 0.50;
 	};
 
 	class ntf_hlm_ops_pelt_str_win : rhsusf_opscore_cover {
@@ -347,6 +355,8 @@ class cfgWeapons {
 			"ntf_rhs\data\ntf_hlm_opscore_cover_win.paa", // cover
 			"\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa"
 		};
+		ace_hearing_protection = 0.80;
+		ace_hearing_lowerVolume = 0.50;
 	};
 
 	class ntf_hlm_ops_pelt_str_cam_win : rhsusf_opscore_cover {
@@ -363,6 +373,8 @@ class cfgWeapons {
 			"ntf_rhs\data\ntf_hlm_opscore_cover_win.paa", // cover
 			"\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa"
 		};
+		ace_hearing_protection = 0.80;
+		ace_hearing_lowerVolume = 0.50;
 	};
 
 	class ntf_hlm_ops_wdl : rhsusf_opscore_cover {
@@ -395,6 +407,8 @@ class cfgWeapons {
 			"ntf_rhs\data\ntf_hlm_opscore_cover_wdl.paa", // cover
 			""
 		};
+		ace_hearing_protection = 0.80;
+		ace_hearing_lowerVolume = 0.50;
 	};
 
 	class ntf_hlm_ops_pelt_str_wdl : rhsusf_opscore_cover {
@@ -411,6 +425,8 @@ class cfgWeapons {
 			"ntf_rhs\data\ntf_hlm_opscore_cover_wdl.paa", // cover
 			"\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa"
 		};
+		ace_hearing_protection = 0.80;
+		ace_hearing_lowerVolume = 0.50;
 	};
 
 	class ntf_hlm_ops_pelt_str_cam_wdl : rhsusf_opscore_cover {
@@ -427,6 +443,8 @@ class cfgWeapons {
 			"ntf_rhs\data\ntf_hlm_opscore_cover_wdl.paa", // cover
 			"\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa"
 		};
+		ace_hearing_protection = 0.80;
+		ace_hearing_lowerVolume = 0.50;
 	};
 
 	class rhsusf_opscore_paint_pelt_nsw_cam;
@@ -460,6 +478,8 @@ class cfgWeapons {
 			"", // cover
 			""
 		};
+		ace_hearing_protection = 0.80;
+		ace_hearing_lowerVolume = 0.50;
 	};
 
 	class ntf_hlm_ops_pelt_str_spr : rhsusf_opscore_paint_pelt_nsw_cam {
@@ -476,6 +496,8 @@ class cfgWeapons {
 			"",
 			"\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa"
 		};
+		ace_hearing_protection = 0.80;
+		ace_hearing_lowerVolume = 0.50;
 	};
 
 	class ntf_hlm_ops_pelt_str_cam_spr : rhsusf_opscore_paint_pelt_nsw_cam {
@@ -492,6 +514,8 @@ class cfgWeapons {
 			"",
 			"\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa"
 		};
+		ace_hearing_protection = 0.80;
+		ace_hearing_lowerVolume = 0.50;
 	};
 
 //========================================================================== SPC =================================================================================
