@@ -127,8 +127,8 @@ class CfgMagazines {
 	class ntf_mag_rfk_HEAT : rhs_mag_maaws_HEAT {
 		author="Christiansen";
 		scope=2;
-		displayName="[NTF] FFV651 HEAT";
-		displaynameshort="651 HEAT";
+		displayName="[NTF] FFV751 HEAT";
+		displaynameshort="751 HEAT";
 		initSpeed=290;
 	};
 
