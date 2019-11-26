@@ -381,6 +381,56 @@ class cfgWeapons {
         };
     };
 
+		class ntf_uni_g3_wdl_od : Uniform_Base {
+        scope = 2;
+		scopeArsenal = 2;
+		author = "Christiansen";
+		picture="ntf_vsm\data\ntf_insignia.paa";
+        displayName= "[NTF] G3 Uniform (OD+Skog)";
+		modelsides[]={3,2,1,0};
+		model="VSM_G2\Models\VSM_final_Crye_Gen2.p3d";
+		hiddenSelections[]= {
+			"_MagpulGloves",
+			"_Gen2Pants",
+			"_Gen2Shirt",
+			"_salomonRight",
+			"_salomonLeft",
+			"insignia"
+		};
+
+        class ItemInfo : UniformItem {
+            uniformModel = "-";
+            uniformClass = "ntf_g3_wdl_od"; //would be same as our made soldier class
+            containerClass = "Supply50"; //how much it can carry
+            mass = 25; //how much it weights
+        };
+    };
+
+	class ntf_uni_g3_roll_wdl_od : Uniform_Base {
+        scope = 2;
+		scopeArsenal = 2;
+		author = "Christiansen";
+		picture="ntf_vsm\data\ntf_insignia.paa";
+        displayName= "[NTF] G3 Uniform (Brettet / OD+Skog)";
+		modelsides[]={3,2,1,0};
+		model="VSM_G2\Models\VSM_final_Crye_Gen2_rolled.p3d";
+		hiddenSelections[]= {
+			"_MagpulGloves",
+			"_Gen2Pants",
+			"_Gen2Shirt",
+			"_salomonRight",
+			"_salomonLeft",
+			"insignia"
+		};
+
+        class ItemInfo : UniformItem {
+            uniformModel = "-";
+            uniformClass = "ntf_g3_roll_wdl_od"; //would be same as our made soldier class
+            containerClass = "Supply50"; //how much it can carry
+            mass = 25; //how much it weights
+        };
+    };
+
 	class ntf_uni_g3_des : Uniform_Base {
         scope = 2;
 		scopeArsenal = 2;
@@ -533,6 +583,30 @@ class CfgVehicles {
 		model="VSM_G2\Models\VSM_final_Crye_Gen2_rolled.p3d";
         hiddenSelections[] = {"_MagpulGloves", "_Gen2Pants", "_Gen2Shirt", "_salomonRight", "_salomonLeft", "insignia"};
         hiddenSelectionsTextures[] = {"ntf_vsm\data\ntf_g3_gloves_blk.paa", "ntf_vsm\data\ntf_g3_pant_wdl.paa", "ntf_vsm\data\ntf_g3_shirt_wdl.paa", "ntf_vsm\data\ntf_g3_shoe_r.paa", "ntf_vsm\data\ntf_g3_shoe_l.paa"};
+    };
+
+	class ntf_g3_wdl_od : B_Soldier_F {
+        _generalMacro = "B_Soldier_F"; //unsure what this does
+        scope = 1;
+        displayName= "[NTF] G3 Uniform (OD+Skog)";
+        uniformAccessories[] = {};
+        nakedUniform = "U_BasicBody"; //class for "naked" body
+        uniformClass = "ntf_g3_wdl"; //the uniform item
+		model="VSM_G2\Models\VSM_final_Crye_Gen2.p3d";
+        hiddenSelections[] = {"_MagpulGloves", "_Gen2Pants", "_Gen2Shirt", "_salomonRight", "_salomonLeft", "insignia"};
+        hiddenSelectionsTextures[] = {"ntf_vsm\data\ntf_g3_gloves_blk.paa", "ntf_vsm\data\ntf_g3_pant_od.paa", "ntf_vsm\data\ntf_g3_shirt_wdl.paa", "ntf_vsm\data\ntf_g3_shoe_r.paa", "ntf_vsm\data\ntf_g3_shoe_l.paa"};
+    };
+
+	class ntf_g3_roll_wdl_od : B_Soldier_F {
+        _generalMacro = "B_Soldier_F"; //unsure what this does
+        scope = 1;
+        displayName= "[NTF] G3 Uniform (Brettet / OD+Skog)";
+        uniformAccessories[] = {};
+        nakedUniform = "U_BasicBody"; //class for "naked" body
+        uniformClass = "ntf_g3_roll_wdl"; //the uniform item
+		model="VSM_G2\Models\VSM_final_Crye_Gen2_rolled.p3d";
+        hiddenSelections[] = {"_MagpulGloves", "_Gen2Pants", "_Gen2Shirt", "_salomonRight", "_salomonLeft", "insignia"};
+        hiddenSelectionsTextures[] = {"ntf_vsm\data\ntf_g3_gloves_blk.paa", "ntf_vsm\data\ntf_g3_pant_od.paa", "ntf_vsm\data\ntf_g3_shirt_wdl.paa", "ntf_vsm\data\ntf_g3_shoe_r.paa", "ntf_vsm\data\ntf_g3_shoe_l.paa"};
     };
 
 	class ntf_g3_des : B_Soldier_F {
