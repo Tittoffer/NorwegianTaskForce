@@ -470,19 +470,13 @@ class CfgVehicles {
 	class Box_Syndicate_WpsLaunch_F;
 	class ntf_ammobox_heavy_wood: Box_Syndicate_WpsLaunch_F {
 		displayName = "[NTF] Forsyningskasse (tung)";
+		scope = 2;
+		scopeCurator = 2;
 		picture="\ntf_vanilla\data\ntf_insignia.paa";
 		transportMaxWeapons = 25;
 		transportMaxMagazines = 250;
 		class TransportBackpacks {
-			class _xx_ntf_pack_patsekk_des {
-				magazine = "ntf_pack_patsekk_des";
-				count = 1;
-			};
 
-			class _xx_ntf_pack_patsekk_wdl {
-				magazine = "ntf_pack_patsekk_wdl";
-				count = 1;
-			};
 		};
 		class TransportWeapons {
 
@@ -539,13 +533,13 @@ class CfgVehicles {
 				count = 4;
 			};
 
-			class _xx_rhs_mag_maaws_HEAT {
-				magazine = "rhs_mag_maaws_HEAT";
+			class _xx_ntf_mag_rfk_HEAT {
+				magazine = "ntf_mag_rfk_HEAT";
 				count = 6;
 			};
 
-			class _xx_rhs_mag_maaws_HE {
-				magazine = "rhs_mag_maaws_HE";
+			class _xx_ntf_mag_rfk_HE {
+				magazine = "ntf_mag_rfk_HE";
 				count = 6;
 			};
 		};
@@ -611,6 +605,8 @@ class CfgVehicles {
 	class Box_Syndicate_Ammo_F;
 	class ntf_ammobox_light_wood: Box_Syndicate_Ammo_F {
 		displayName = "[NTF] Forsyningskasse (lett)";
+		scope = 2;
+		scopeCurator = 2;
 		picture="\ntf_vanilla\data\ntf_insignia.paa";
 		transportMaxWeapons = 25;
 		transportMaxMagazines = 250;
