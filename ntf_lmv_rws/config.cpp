@@ -56,7 +56,7 @@ class CfgAmmo
 		typicalSpeed=880;
 		timeToLive=10;
 		model="\A3\Weapons_f\Data\bullettracer\tracer_white";
-		tracerScale=1.2;
+		tracerScale=0.5;
 		tracerStartTime=0.075000003;
 		tracerEndTime=1;
 		airFriction=-0.00085999997;
@@ -86,9 +86,9 @@ class CfgAmmo
 		indirectHit=2;
 		indirectHitRange=1;
 		caliber=3.5999999;
-		explosionEffects="ExploAmmoExplosion";
-		explosionTime=-1;
-		explosive=0.050000001;
+		//explosionEffects="ExploAmmoExplosion";
+		//explosionTime=-1;
+		//explosive=0.050000001;
 		typicalSpeed=1060;
 		airFriction=-0.00036000001;
 		cost=15;
@@ -178,9 +178,10 @@ class cfgWeapons
 		displayName="Protector Lite M2";
 		magazines[]=
 		{
+			"ntf_100Rnd_127_mpt_mag",
 			"ntf_100Rnd_127_mag",
-			"ntf_100Rnd_127_tracer_mag",
-			"ntf_100Rnd_127_mpt_mag"
+			"ntf_100Rnd_127_tracer_mag"
+
 		};
 		magazineReloadTime=8;
 	};
